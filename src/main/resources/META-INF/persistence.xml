@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <mapping-file>AdministrableRoleAuthorizationsEntity.xml</mapping-file>
+        <mapping-file>AccountEntity.xml</mapping-file>
+        <mapping-file>AnswerEntity.xml</mapping-file>
+        <mapping-file>AssignEntity.xml</mapping-file>
+        <mapping-file>BankEntity.xml</mapping-file>
+        <mapping-file>QuestionEntity.xml</mapping-file>
+        <mapping-file>QuiztestEntity.xml</mapping-file>
+        <mapping-file>ResultEntity.xml</mapping-file>
+        <mapping-file>UserEntity.xml</mapping-file>
+        <class>ninhnq.web.QuizApp.Entity.AccountEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.AnswerEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.AssignEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.BankEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.QuestionEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.QuiztestEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.ResultEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.UserEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/quizappdb"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>

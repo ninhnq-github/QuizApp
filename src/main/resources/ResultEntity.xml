@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="ninhnq.web.QuizApp.Entity.ResultEntity">
+        <table name="result" schema="quizappdb" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="uid">
+                <column name="uid" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="tid">
+                <column name="tid" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="correct">
+                <column name="correct" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="wrong">
+                <column name="wrong" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="time">
+                <column name="time" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

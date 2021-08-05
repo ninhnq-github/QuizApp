@@ -1,0 +1,60 @@
+.path-mod-quiz #mod_quiz_navblock .qnbutton.flagged .thispageholder {
+    background: transparent url("../icon/flag-on.svg") 15px 0 no-repeat;
+}
+
+.page-header .top-bar {
+    background: #ff7600;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    position: relative;
+    z-index: 20;
+}
+
+.page-context-header .page-header-headings h1 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #ff7d00;
+    margin-bottom: 10px;
+}
+
+.app-name-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001d5e;
+    padding-left: 10px;
+}
+
+.app-icon-img{
+    margin-top: -10px;
+    height: 30px;
+    width: 30px;
+}
+
+.quiz-time-left-flex{
+    display: flex;
+    position: fixed;
+    right: 15px;
+    top: 70px;
+    z-index: 100;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff5900;
+    border-color: #001d40;
+    border-width: 2px;
+}
+
+.quiz-time-left-flex .text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.quiz-time-left-flex .text .time{
+    font-size: 20px;
+    font-weight: 700;
+    color: #001063;
+}
