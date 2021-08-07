@@ -22,6 +22,14 @@
         <class>ninhnq.web.QuizApp.Entity.QuiztestEntity</class>
         <class>ninhnq.web.QuizApp.Entity.ResultEntity</class>
         <class>ninhnq.web.QuizApp.Entity.UserEntity</class>
+        <class>Entity.AccountEntity</class>
+        <class>Entity.AnswerEntity</class>
+        <class>Entity.AssignEntity</class>
+        <class>Entity.BankEntity</class>
+        <class>Entity.QuestionEntity</class>
+        <class>Entity.QuiztestEntity</class>
+        <class>Entity.ResultEntity</class>
+        <class>Entity.UserEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/quizappdb"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>

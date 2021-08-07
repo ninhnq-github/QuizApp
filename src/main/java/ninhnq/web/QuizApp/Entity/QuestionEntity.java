@@ -1,6 +1,13 @@
 package ninhnq.web.QuizApp.Entity;
 
+import ninhnq.web.QuizApp.helper.HibernateUtility;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "question", schema = "quizappdb", catalog = "")
@@ -86,4 +93,138 @@ public class QuestionEntity {
         result = 31 * result + (answer != null ? answer.hashCode() : 0);
         return result;
     }
+
+    public static List<QuestionEntity> getAll()
+    {
+        Transaction transaction = null;
+        List<QuestionEntity> mlist = null;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            org.hibernate.query.Query<QuestionEntity> query = session.createQuery("FROM QuestionEntity");
+            mlist = query.getResultList();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        finally
+        {
+            session.close();
+        }
+        return mlist;
+    }
+
+    public static  QuestionEntity getById(int id)
+    {
+        Transaction transaction = null;
+        QuestionEntity ques = null;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            Query< QuestionEntity> query = session.createQuery("FROM QuestionEntity WHERE QuestionEntity.id=:rowId");
+            query.setParameter("rowId",id);
+            ques = query.uniqueResult();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        finally
+        {
+            session.close();
+        }
+        return ques;
+    }
+
+    public static boolean insert( QuestionEntity bankEntity)
+    {
+        Transaction transaction = null;
+        Session session= HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            session.save(bankEntity);
+            transaction.commit();
+            System.out.println("Insert < QuestionEntity> complete");
+            return true;
+        }
+        catch (Exception e)
+        {
+            if(transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            session.close();
+        }
+    }
+
+    public static boolean delete( QuestionEntity bankEntity)
+    {
+        Transaction transaction = null;
+        Session session= HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            session.delete(bankEntity);
+            transaction.commit();
+            System.out.println("Delete < QuestionEntity> complete");
+            return true;
+        }
+        catch (Exception e)
+        {
+            if(transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            session.close();
+        }
+    }
+
+    public static boolean update( QuestionEntity bankEntity)
+    {
+        Transaction transaction = null;
+        Session session= HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            session.update(bankEntity);
+            transaction.commit();
+            System.out.println("Update < QuestionEntity> complete");
+            return true;
+        }
+        catch (Exception e)
+        {
+            if(transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            session.close();
+        }
+    }
+
 }

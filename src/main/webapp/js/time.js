@@ -1,16 +1,18 @@
 function getServerTime()
 {
     //console.log("Timeout was called");
-    var prefix = document.getElementById('112233-page-dynamic-prefix').value;
-    var data = {'auth':191122333, 'key': 256611129};
-    var request = $.ajax({
+    let prefix = document.getElementById('112233-page-dynamic-prefix').value;
+    let data = {'auth':191122333, 'key': 256611129};
+    let request = $.ajax({
         type: "GET",
         dataType: "html",
-        url: prefix + "/ServerTime",
+        url: prefix + "/TimeAPI",
         data: data
     });
     request.done(function (data) {
         $$("time-left-1210").innerHTML = data;
+        if (data.toString() === "TIMEOUT")
+            break_timer();
         console.log("time: " + data.toString());
     });
     request.fail(function (xhr, msg){
@@ -21,4 +23,6 @@ function getServerTime()
     });
 }
 
-setInterval(getServerTime,1000);
+let interval = setInterval(getServerTime,1000);
+
+function break_timer(){clearInterval(interval);}

@@ -1,4 +1,4 @@
-package ninhnq.web.QuizApp.Servlet;
+package ninhnq.web.QuizApp.Servlet.Controller;
 
 import ninhnq.web.QuizApp.Entity.AnswerEntity;
 import ninhnq.web.QuizApp.Entity.QuestionEntity;

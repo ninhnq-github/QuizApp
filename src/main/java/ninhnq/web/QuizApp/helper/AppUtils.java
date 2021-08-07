@@ -31,11 +31,15 @@ public class AppUtils {
 
     public static String getTimeLeft(Long timeStart, Long limit)
     {
-        SimpleDateFormat formatter= new SimpleDateFormat("mm:ss");
         Long sub = limit*60*1000 - (System.currentTimeMillis() - timeStart);
-        if (sub <0) return String.valueOf(sub);
-        Date date = new Date(sub);
-        return formatter.format(date);
+        if (sub <0) return "TIMEOUT";
+        int h = (int) (sub/(60*60*1000));
+        sub = sub%(60*60*1000);
+        int m = (int) (sub/(60*1000));
+        sub = sub%(60*1000);
+        int s = (int) (sub/(1000));
+        String time = h+":"+m+":"+s;
+        return time;
     }
 
     public static String getCurrentDateTime(String format)

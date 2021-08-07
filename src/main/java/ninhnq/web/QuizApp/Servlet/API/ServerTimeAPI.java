@@ -1,4 +1,4 @@
-package ninhnq.web.QuizApp.Servlet;
+package ninhnq.web.QuizApp.Servlet.API;
 
 import ninhnq.web.QuizApp.Entity.AnswerEntity;
 import ninhnq.web.QuizApp.Entity.QuestionEntity;
@@ -18,8 +18,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@WebServlet(name = "TimeServlet", value = "/ServerTime")
-public class TimeServlet extends HttpServlet {
+@WebServlet(name = "TimeServlet", value = "/TimeAPI")
+public class ServerTimeAPI extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();

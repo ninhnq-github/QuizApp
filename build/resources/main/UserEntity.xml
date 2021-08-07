@@ -2,7 +2,7 @@
 <entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
                  version="3.0">
 
-    <entity class="ninhnq.web.QuizApp.Entity.UserEntity">
+    <entity class="Entity.UserEntity">
         <table name="user" schema="quizappdb" catalog=""/>
         <attributes>
             <id name="id">
