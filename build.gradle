@@ -20,6 +20,8 @@ targetCompatibility = 11
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
 
 dependencies {
     compileOnly('javax:javaee-api:8.0.1')
