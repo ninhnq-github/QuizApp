@@ -11,9 +11,11 @@
 <a href="hello-servlet">Hello</a><br>
 <form name="quiz-test-form" action="${pageContext.request.contextPath}/Quiz" method="post">
     <input name="btn-to-quiz-test-page" value="Start test" type="submit">
+    <input hidden name="QuizID" value="TEST01">
 </form>
 <form name="quiz-test-form" action="${pageContext.request.contextPath}/AddQuestion" method="post">
     <input name="btn-to-quiz-test-page" value="Add question" type="submit">
+
 </form>
 </body>
 </html>

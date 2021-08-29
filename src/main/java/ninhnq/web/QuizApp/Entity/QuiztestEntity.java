@@ -1,9 +1,9 @@
 package ninhnq.web.QuizApp.Entity;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Entity
-@Table(name = "quiztest", schema = "quizappdb", catalog = "")
+
 public class QuiztestEntity {
     private int id;
     private String name;
@@ -11,6 +11,7 @@ public class QuiztestEntity {
     private Integer time;
     private String start;
     private String end;
+    List<QuestionEntity> questions;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -20,6 +21,14 @@ public class QuiztestEntity {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public List<QuestionEntity> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List<QuestionEntity> questions) {
+        this.questions = questions;
     }
 
     @Basic
