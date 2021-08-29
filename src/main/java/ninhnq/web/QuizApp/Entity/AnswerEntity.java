@@ -13,6 +13,15 @@ import java.util.List;
 @Table(name = "answer", schema = "quizappdb", catalog = "")
 public class AnswerEntity {
     private int id;
+
+    public AnswerEntity(){}
+
+    public AnswerEntity(int id, Integer qid, String content) {
+        this.id = id;
+        this.qid = qid;
+        this.content = content;
+    }
+
     private Integer qid;
     private String content;
 
@@ -68,6 +77,34 @@ public class AnswerEntity {
         return result;
     }
 
+    public static int getCurrentID()
+    {
+        Transaction transaction = null;
+        int id = 0;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            org.hibernate.query.Query<Integer> query = session.createQuery("SELECT MAX(id) FROM AnswerEntity ");
+            id = (int) query.uniqueResult();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return 0;
+        }
+        finally
+        {
+            session.close();
+        }
+        return id;
+    }
+
     public static List<AnswerEntity> getAll()
     {
         Transaction transaction = null;
@@ -77,6 +114,34 @@ public class AnswerEntity {
         {
             transaction = session.beginTransaction();
             org.hibernate.query.Query<AnswerEntity> query = session.createQuery("FROM AnswerEntity");
+            mlist = query.getResultList();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        finally
+        {
+            session.close();
+        }
+        return mlist;
+    }
+
+    public static List<AnswerEntity> get_by_question(int id)
+    {
+        Transaction transaction = null;
+        List<AnswerEntity> mlist = null;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            org.hibernate.query.Query<AnswerEntity> query = session.createQuery("FROM AnswerEntity WHERE qid=:ques");
+            query.setParameter("ques",id);
             mlist = query.getResultList();
             transaction.commit();
         }

@@ -199,7 +199,7 @@
                                                    name="submitbutton"
                                                    id="id_submitbutton"
                                                    value="Nhập dữ liệu"
-                                                   onclick="">
+                                                   onclick="addNewQuestion()">
                                             <div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
                                             </div>
                                         </div>

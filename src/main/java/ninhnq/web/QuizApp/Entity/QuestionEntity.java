@@ -14,6 +14,17 @@ import java.util.List;
 public class QuestionEntity {
     private int id;
     private Integer bid;
+
+    public QuestionEntity() { }
+
+    public QuestionEntity(int id, Integer bid, Integer type, String content, String answer) {
+        this.id = id;
+        this.bid = bid;
+        this.type = type;
+        this.content = content;
+        this.answer = answer;
+    }
+
     private Integer type;
     private String content;
     private String answer;
@@ -94,6 +105,34 @@ public class QuestionEntity {
         return result;
     }
 
+    public static int getCurrentID()
+    {
+        Transaction transaction = null;
+        int id = 0;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            org.hibernate.query.Query<Integer> query = session.createQuery("SELECT MAX(id) FROM QuestionEntity");
+            id = (int) query.uniqueResult();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return 0;
+        }
+        finally
+        {
+            session.close();
+        }
+        return id;
+    }
+
     public static List<QuestionEntity> getAll()
     {
         Transaction transaction = null;
@@ -103,6 +142,34 @@ public class QuestionEntity {
         {
             transaction = session.beginTransaction();
             org.hibernate.query.Query<QuestionEntity> query = session.createQuery("FROM QuestionEntity");
+            mlist = query.getResultList();
+            transaction.commit();
+        }
+        catch (Exception e)
+        {
+            if (transaction != null)
+            {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        finally
+        {
+            session.close();
+        }
+        return mlist;
+    }
+
+    public static List<QuestionEntity> get_by_bank(int id)
+    {
+        Transaction transaction = null;
+        List<QuestionEntity> mlist = null;
+        Session session = HibernateUtility.getSessionFactory().openSession();
+        try
+        {
+            transaction = session.beginTransaction();
+            Query query = session.createQuery("FROM QuestionEntity WHERE bid=:bank");
+            query.setParameter("bank",id);
             mlist = query.getResultList();
             transaction.commit();
         }
@@ -225,6 +292,20 @@ public class QuestionEntity {
         finally {
             session.close();
         }
+    }
+
+    public String getQuestionText(int id){
+        String question = "Question " + id + ". " + this.content + "\n";
+        List<AnswerEntity> answers = AnswerEntity.get_by_question(this.id);
+        char c = 'A', correct='0';
+        for (AnswerEntity ans:answers){
+            question += c + ". " + ans.getContent() + "\n";
+            if (ans.getContent().equals(this.answer))
+                correct = c;
+            c++;
+        }
+        question += "ANSWER: " + correct + "\n";
+        return question;
     }
 
 }

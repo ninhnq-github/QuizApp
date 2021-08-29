@@ -35,11 +35,13 @@ function addNewQuestion(){
         }
     } else
         quesBank = $$('1231-selection').value;
+    let newbank = $$('add-new-ques-bank-checkbox').checked;
     let data = {
+        addNewBank : newbank,
         questionsFile : quesFile,
         questionsBank : quesBank
     }
-    let prefix = $$('112233-page-dynamic-prefix');
+    let prefix = $$('112233-page-dynamic-prefix').value;
     $.ajax({
         url: prefix + "/AddQuestionAPI",
         type: "POST",
