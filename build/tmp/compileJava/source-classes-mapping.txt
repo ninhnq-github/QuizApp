@@ -1,9 +1,19 @@
-ninhnq/web/QuizApp/Entity/QuiztestEntity.java
- ninhnq.web.QuizApp.Entity.QuiztestEntity
+ninhnq/web/QuizApp/Servlet/Controller/QuizTestServlet.java
+ ninhnq.web.QuizApp.Servlet.Controller.QuizTestServlet
+ninhnq/web/QuizApp/Servlet/API/AddNewQuestionAPI.java
+ ninhnq.web.QuizApp.Servlet.API.AddNewQuestionAPI
+ninhnq/web/QuizApp/Entity/ResultEntity.java
+ ninhnq.web.QuizApp.Entity.ResultEntity
 ninhnq/web/QuizApp/Servlet/Controller/AddQuestionServlet.java
  ninhnq.web.QuizApp.Servlet.Controller.AddQuestionServlet
 ninhnq/web/QuizApp/Hello/HelloResource.java
  ninhnq.web.QuizApp.Hello.HelloResource
+ninhnq/web/QuizApp/Entity/BankEntity.java
+ ninhnq.web.QuizApp.Entity.BankEntity
+ninhnq/web/QuizApp/Entity/QuestionEntity.java
+ ninhnq.web.QuizApp.Entity.QuestionEntity
+ninhnq/web/QuizApp/Servlet/API/ServerTimeAPI.java
+ ninhnq.web.QuizApp.Servlet.API.ServerTimeAPI
 ninhnq/web/QuizApp/Hello/HelloApplication.java
  ninhnq.web.QuizApp.Hello.HelloApplication
 ninhnq/web/QuizApp/helper/AppUtils.java
@@ -14,27 +24,17 @@ ninhnq/web/QuizApp/Entity/UserEntity.java
  ninhnq.web.QuizApp.Entity.UserEntity
 ninhnq/web/QuizApp/Hello/HelloServlet.java
  ninhnq.web.QuizApp.Hello.HelloServlet
-ninhnq/web/QuizApp/Servlet/API/ServerTimeAPI.java
- ninhnq.web.QuizApp.Servlet.API.ServerTimeAPI
-ninhnq/web/QuizApp/Entity/BankEntity.java
- ninhnq.web.QuizApp.Entity.BankEntity
-ninhnq/web/QuizApp/Servlet/API/UploadFileAPI.java
- ninhnq.web.QuizApp.Servlet.API.UploadFileAPI
-ninhnq/web/QuizApp/Entity/AccountEntity.java
- ninhnq.web.QuizApp.Entity.AccountEntity
-ninhnq/web/QuizApp/Entity/ResultEntity.java
- ninhnq.web.QuizApp.Entity.ResultEntity
 ninhnq/web/QuizApp/Entity/AnswerEntity.java
  ninhnq.web.QuizApp.Entity.AnswerEntity
 ninhnq/web/QuizApp/Entity/TestQuestion.java
  ninhnq.web.QuizApp.Entity.TestQuestion
-ninhnq/web/QuizApp/Servlet/Controller/QuizTestServlet.java
- ninhnq.web.QuizApp.Servlet.Controller.QuizTestServlet
-ninhnq/web/QuizApp/Servlet/API/AddNewQuestionAPI.java
- ninhnq.web.QuizApp.Servlet.API.AddNewQuestionAPI
-ninhnq/web/QuizApp/helper/HibernateUtility.java
- ninhnq.web.QuizApp.helper.HibernateUtility
-ninhnq/web/QuizApp/Entity/QuestionEntity.java
- ninhnq.web.QuizApp.Entity.QuestionEntity
+ninhnq/web/QuizApp/Servlet/API/UploadFileAPI.java
+ ninhnq.web.QuizApp.Servlet.API.UploadFileAPI
 ninhnq/web/QuizApp/Servlet/Controller/QuizServlet.java
  ninhnq.web.QuizApp.Servlet.Controller.QuizServlet
+ninhnq/web/QuizApp/Entity/QuiztestEntity.java
+ ninhnq.web.QuizApp.Entity.QuiztestEntity
+ninhnq/web/QuizApp/Entity/AccountEntity.java
+ ninhnq.web.QuizApp.Entity.AccountEntity
+ninhnq/web/QuizApp/helper/HibernateUtility.java
+ ninhnq.web.QuizApp.helper.HibernateUtility
