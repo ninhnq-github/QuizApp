@@ -155,32 +155,34 @@
                                 <%int ques_id = 1;%>
                                 <c:forEach var="ques" items="${requestScope.mlistQuestion}">
                                     <div id="ques_id${ques.question.id}" class="que multichoice deferredfeedback notyetanswered">
-                                        <div class="info"><h3 class="no">Câu hỏi <span class="qno"><%out.print(ques_id);%></span></h3>
-                                            <div class="state">Chưa trả lời</div>
-                                            <div class="grade">Đạt điểm 1,00</div>
-                                            <div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive">
-                                                <input type="hidden" name="${ques.question.id}:flagged" value="0" />
-                                                <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_<%out.print(ques_id);%>','${ques.question.id}:flaggedimg')" />
-                                                <input type="hidden" value="" class="questionflagpostdata" />
-                                                <label id="${ques.question.id}:flaggedlabel" for="${ques.question.id}:flaggedcheckbox">
-                                                    <img src="${pageContext.request.contextPath}/icon/unflagged.svg" alt="Không gắn cờ" class="questionflagimage" id="${ques.question.id}:flaggedimg" />
-                                                    <span>Đặt cờ</span>
-                                                </label>
+                                        <c:if test="${ques.question.type!=-1}">
+                                            <div class="info"><h3 class="no">Câu hỏi <span class="qno"><%out.print(ques_id);%></span></h3>
+                                                <div class="state">Chưa trả lời</div>
+                                                <div class="grade">Đạt điểm 1,00</div>
+                                                <div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive">
+                                                    <input type="hidden" name="${ques.question.id}:flagged" value="0" />
+                                                    <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_<%out.print(ques_id);%>','${ques.question.id}:flaggedimg')" />
+                                                    <input type="hidden" value="" class="questionflagpostdata" />
+                                                    <label id="${ques.question.id}:flaggedlabel" for="${ques.question.id}:flaggedcheckbox">
+                                                        <img src="${pageContext.request.contextPath}/icon/unflagged.svg" alt="Không gắn cờ" class="questionflagimage" id="${ques.question.id}:flaggedimg" />
+                                                        <span>Đặt cờ</span>
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </c:if>
                                         <div class="content">
                                             <div class="formulation clearfix">
                                                 <h4 class="accesshide">Đoạn văn câu hỏi</h4>
                                                 <input type="hidden" name="${ques.question.id}:sequencecheck" value="1" />
-                                                <div class="qtext"><p id="move_to_this_${ques.question.id}"><c:out value="${ques.question.content}"/></p></div>
+                                                <div class="qtext"><p id="move_to_this_${ques.question.id}"><c:out escapeXml="false" value="${ques.question.content}"/></p></div>
                                                 <div class="ablock">
                                                     <div class="answer">
                                                         <%char ch = 'a';%>
                                                         <c:forEach var="ans" items="${ques.answer}">
                                                             <div class="r0">
-                                                                <input type="radio" name="${ques.question.id}answer" value="${ans.id}"
+                                                                <input type="radio" name="${ques.question.id}answer" value="${ans.content}"
                                                                        id="${ques.question.id}answer${ans.id}" aria-labelledby="${ques.question.id}answer${ans.id}_label"
-                                                                       onclick="setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>')"/>
+                                                                       onclick="setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>','${ans.id}')"/>
                                                                 <div class="d-flex w-100" id="${ans.id}answer0_label" data-region="answer-label">
                                                                     <span class="answernumber"><%out.print(ch);%>. </span>
                                                                     <div class="flex-fill ml-1">${ans.content}</div></div></div>
@@ -195,7 +197,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <%ques_id++;%>
+                                    <c:if test="${ques.question.type!=-1}">
+                                        <%ques_id++;%>
+                                    </c:if>
                                 </c:forEach>
                                 </div>
                             </div>
@@ -218,14 +222,18 @@
                                 <div class="card-text content mt-3">
 
                                     <div class="qn_buttons clearfix multipages">
-                                        <c:forEach var="i" begin="1" end="60" step="1">
-                                            <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_${i}" title="Chưa trả lời" data-quiz-page="0"
-                                               href="#ques_id${requestScope.mlistQuestion.get(i-1).question.id}">
-                                                <span class="thispageholder"></span>
-                                                <span class="trafficlight" id="quiznavbutton_${i}_img"></span>
-                                                <span class="accesshide">Question </span> <c:out value="${i}"/>
-                                                <span class="accesshide"> This page <span class="flagstate"></span></span>
-                                            </a>
+                                        <%int Qid=1;%>
+                                        <c:forEach var="i" begin="1" end="${requestScope.mlistQuestion.size()}" step="1">
+                                            <c:if test="${requestScope.mlistQuestion.get(i-1).question.type!=-1}">
+                                                <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_<%out.print(Qid);%>" title="Chưa trả lời" data-quiz-page="0"
+                                                   href="#ques_id${requestScope.mlistQuestion.get(i-1).question.id}">
+                                                    <span class="thispageholder"></span>
+                                                    <span class="trafficlight" id="quiznavbutton_<%out.print(Qid);%>_img"></span>
+                                                    <span class="accesshide">Question </span> <%out.print(Qid);%>
+                                                    <span class="accesshide"> This page <span class="flagstate"></span></span>
+                                                </a>
+                                                <%Qid++;%>
+                                            </c:if>
                                         </c:forEach>
                                     </div>
                                     <div class="othernav">
@@ -257,5 +265,10 @@
     </footer>
 </div>
 <input style="visibility: hidden;" hidden name="dynamic-prefix" value="${pageContext.request.contextPath}" id="112233-page-dynamic-prefix">
+<form name="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Result">
+    <c:forEach items="${requestScope.mlistQuestion}"  var="ques">
+        <input value="" name="<c:out value="${ques.question.id}"/>" id="submit_answer_<c:out value="${ques.question.id}"/>">
+    </c:forEach>
+</form>
 </body>
 </html>

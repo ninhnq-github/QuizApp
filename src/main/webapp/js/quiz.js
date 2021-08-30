@@ -19,12 +19,13 @@ function clearchoice(quesid, box)
     $$(box+'_img').style.backgroundColor = "rgba(0,189,49,0)";
 }
 
-function setClearchoice(quesid,box)
+function setClearchoice(quesid,box,ans)
 {
     var prefix = $$('112233-page-dynamic-prefix').value;
     $$(quesid+'_clearchoice').hidden = false;
     var url = prefix + '/icon/checked.png';
     $$(box+'_img').style.backgroundColor = "#95e0f5";
+    $$('submit_answer_' + quesid).value = $$(quesid + 'answer' + ans).value;
     console.log(box+'_img')
 }
 

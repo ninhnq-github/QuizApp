@@ -1,17 +1,48 @@
 package ninhnq.web.QuizApp.Entity;
-
 import javax.persistence.*;
 import java.util.List;
-
 
 public class QuiztestEntity {
     private int id;
     private String name;
     private Integer point;
+    private Integer noques;
     private Integer time;
-    private String start;
-    private String end;
-    List<QuestionEntity> questions;
+    private Long start;
+    private Long end;
+    List<TestQuestion> questions;
+
+    public Long getStart() {
+        return start;
+    }
+
+    public void setStart(Long start) {
+        this.start = start;
+    }
+
+    public Long getEnd() {
+        return end;
+    }
+
+    public void setEnd(Long end) {
+        this.end = end;
+    }
+
+    public List<TestQuestion> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List<TestQuestion> questions) {
+        this.questions = questions;
+    }
+
+    public Integer getNoques() {
+        return noques;
+    }
+
+    public void setNoques(Integer noques) {
+        this.noques = noques;
+    }
 
     @Id
     @Column(name = "id", nullable = false)
@@ -21,14 +52,6 @@ public class QuiztestEntity {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public List<QuestionEntity> getQuestions() {
-        return questions;
-    }
-
-    public void setQuestions(List<QuestionEntity> questions) {
-        this.questions = questions;
     }
 
     @Basic
@@ -59,26 +82,6 @@ public class QuiztestEntity {
 
     public void setTime(Integer time) {
         this.time = time;
-    }
-
-    @Basic
-    @Column(name = "start", nullable = true, length = -1)
-    public String getStart() {
-        return start;
-    }
-
-    public void setStart(String start) {
-        this.start = start;
-    }
-
-    @Basic
-    @Column(name = "end", nullable = true, length = -1)
-    public String getEnd() {
-        return end;
-    }
-
-    public void setEnd(String end) {
-        this.end = end;
     }
 
     @Override

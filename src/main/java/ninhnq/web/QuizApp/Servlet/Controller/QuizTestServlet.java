@@ -9,7 +9,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -19,11 +21,6 @@ import java.util.Scanner;
 public class QuizTestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
@@ -36,27 +33,36 @@ public class QuizTestServlet extends HttpServlet {
 
         QuiztestEntity quizTest = new QuiztestEntity();
         List<QuestionEntity> mlistQuestion = new ArrayList<QuestionEntity>();
+        List<TestQuestion> testQuestion = new ArrayList<>();
         quizTest.setId(198171);
         try {
-            File testFile = new File(testFileName);
-            Scanner in = new Scanner(testFile);
-            int Qid = 0;
+            FileInputStream testFile = new FileInputStream(testFileName);
+            InputStreamReader reader = new InputStreamReader(testFile, "UTF8");
+            Scanner in = new Scanner(reader);
+            int Qid = 113265;
             System.out.println("Start read file test-------------------------------------------------");
             System.out.println("File name: " + testFileName);
             System.out.println("File : " + in.hasNextLine());
             System.out.println("File : " + testFile.toString());
             while (in.hasNextLine()) {
                 String line = in.nextLine();
+                if (line.trim().equals("")) continue;
                 // config............................................................
                 if (line.startsWith("<NAME>")){
-                    quizTest.setName(line.substring(6));
+                    quizTest.setName(line.substring(6).trim());
                     System.out.println("name-------------------------------------------------");
                 } else if (line.startsWith("<TIME>")){
-                    quizTest.setTime(Integer.valueOf(line.substring(6)));
+                    quizTest.setTime(Integer.valueOf(line.substring(6).trim()));
                     System.out.println("time-------------------------------------------------");
                 } else if (line.startsWith("<QUES>")){
-                    quizTest.setPoint(Integer.valueOf(line.substring(6)));
-                    System.out.println("ques-------------------------------------------------");
+                    quizTest.setPoint(Integer.valueOf(line.substring(6).trim()));
+                    System.out.println("Ques-------------------------------------------------");
+                } else if (line.startsWith("<OPEN>")){
+
+                    System.out.println("open-------------------------------------------------");
+                } else if (line.startsWith("<CLOSE>")){
+
+                    System.out.println("close-------------------------------------------------");
                 } else if (line.startsWith("<TRY>")){
                     // set the properties
                 } else if (line.startsWith("<REVIEW>")){
@@ -69,23 +75,27 @@ public class QuizTestServlet extends HttpServlet {
                 // Import question............................................................
                 else if (line.startsWith("<TITLE>")){
                     // set the properties
-                    QuestionEntity q = new QuestionEntity();
-                    q.setType(-1);
-                    q.setContent(line.substring(7));
+                    QuestionEntity q = new QuestionEntity(Qid++,0,-1,line.substring(7).trim(),"");
                     mlistQuestion.add(q);
                     System.out.println("title-------------------------------------------------");
+                    TestQuestion tq = new TestQuestion(q,new ArrayList<>());
+                    testQuestion.add(tq);
                 } else if (line.startsWith("<TEXT>")){
                     String phara = "";
                     String li = in.nextLine();
                     while (!li.equals("</TEXT>"))
                     {
-                        phara += li + "\n";
+                        phara += li + " <br> ";
                         li = in.nextLine();
                     }
                     QuestionEntity q = new QuestionEntity();
+                    q.setId(Qid++);
+                    q.setBid(0);
                     q.setType(-1);
                     q.setContent(phara);
                     System.out.println("text-------------------------------------------------");
+                    TestQuestion tq = new TestQuestion(q,new ArrayList<>());
+                    testQuestion.add(tq);
                 } else {
                     System.out.println("Question - in-------------------------------------------------");
                     String content = line;
@@ -107,14 +117,20 @@ public class QuizTestServlet extends HttpServlet {
                         if (ans.toLowerCase().startsWith(correct.toLowerCase()))
                             correct_ans = ans.substring(2).trim();
 
-                    QuestionEntity questionEntity = new QuestionEntity(0, 0, 0, question, correct_ans);
-                    QuestionEntity.insert(questionEntity);
+                    QuestionEntity questionEntity = new QuestionEntity(Qid++, 0, 0, question, correct_ans);
+                    //QuestionEntity.insert(questionEntity);
                     System.out.println(questionEntity.toString());
+                    int Aid = 0;
+                    List<AnswerEntity> mlistAnswer = new ArrayList<>();
                     for (String ans : answers) {
-                        AnswerEntity answerEntity = new AnswerEntity(0, 0, ans.substring(2).trim());
-                        AnswerEntity.insert(answerEntity);
+                        System.out.println("Answer scaned: " + ans);
+                        AnswerEntity answerEntity = new AnswerEntity(Aid++, Qid-1, ans.substring(2).trim());
+                        //AnswerEntity.insert(answerEntity);
+                        mlistAnswer.add(answerEntity);
                         System.out.println(answerEntity.toString());
                     }
+                    TestQuestion tq = new TestQuestion(questionEntity,mlistAnswer);
+                    testQuestion.add(tq);
                     System.out.println("Question - out-------------------------------------------------");
                 }
             }
@@ -123,7 +139,7 @@ public class QuizTestServlet extends HttpServlet {
             e.printStackTrace();
         }
         request.setAttribute("mQuizTest",quizTest);
-        request.setAttribute("mlistQuestion",mlistQuestion);
+        request.setAttribute("mlistQuestion",testQuestion);
         request.setAttribute("quiz_title","TRẮC NGHIỆM CÔNG CHỨC");
         request.setAttribute("no_ques",quizTest.getPoint());
         request.setAttribute("user_name","Nguyen Quoc Ninh");
@@ -133,6 +149,11 @@ public class QuizTestServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/quiztest.jsp");
         dispatcher.forward(request,response);
         return;
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 
     void dotest(HttpServletRequest request)

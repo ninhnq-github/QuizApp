@@ -11,8 +11,10 @@ import javax.servlet.annotation.MultipartConfig;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +59,7 @@ public class AddNewQuestionAPI extends HttpServlet {
         //System.out.println(uploadPath + filename + " // " + bankID_ + addnewbank);
 
         List<String> textFile;
-        textFile = Files.readAllLines(Path.of(uploadPath + File.separator + filename));
+        textFile = Files.readAllLines(Paths.get(uploadPath + File.separator + filename), StandardCharsets.UTF_8);
         int q_startID = QuestionEntity.getCurrentID();
         int a_startID = AnswerEntity.getCurrentID();
         for (int line = 0; line <textFile.size(); line++){

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="Entity.UserEntity">
+        <table name="user" schema="quizappdb" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="50"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="50"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false" length="12"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false" length="150"/>
+            </basic>
+            <basic name="gen">
+                <column name="gen" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="birht">
+                <column name="birht" nullable="false"/>
+            </basic>
+            <basic name="active">
+                <column name="active" nullable="false" precision="1"/>
+            </basic>
+            <basic name="live">
+                <column name="live" nullable="false" precision="1"/>
+            </basic>
+            <basic name="last">
+                <column name="last" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
