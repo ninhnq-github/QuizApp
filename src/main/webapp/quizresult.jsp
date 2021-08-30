@@ -26,11 +26,9 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/newstyle.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/quiz.js"></script>
-    <script src="${pageContext.request.contextPath}/js/time.js"></script>
-
 </head>
 
-<body  onload="getServerTime()" id="page-mod-quiz-attempt" class="format-topics  path-mod path-mod-quiz chrome dir-ltr lang-vi yui-skin-sam yui3-skin-sam pagelayout-incourse category-81">
+<body  id="page-mod-quiz-attempt" class="format-topics  path-mod path-mod-quiz chrome dir-ltr lang-vi yui-skin-sam yui3-skin-sam pagelayout-incourse category-81">
 
 <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
 
@@ -75,28 +73,28 @@
                                                             </a>
                                                             <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
-                                                                    <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true"  >☖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-1">Nhà của tôi</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
-                                                                    <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true">✍</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-2">Hồ sơ</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
-                                                                    <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true">❏</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-3">Điểm</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
-                                                                    <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon " aria-hidden="true"  >✖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-6">Thoát</span>
                                                                 </a>
 
@@ -113,12 +111,7 @@
         </div><!--//top-bar-->
     </header><!--//header-->
 
-    <div class="quiz-time-left-flex" hidden="true">
-        <span class="text">Thời gian còn lại: <span class="time" id="time-left-1210">16:04</span></span>
-    </div>
-
     <div class="page-header-wrapper has-course-header-image">
-        <div class="course-header-bg"><div class="course-header-image"></div><div class="mask"></div></div>
         <div class="container-fluid">
             <header id="page-header" class="row">
                 <div class="col-12 pt-3 pb-3">
@@ -156,23 +149,23 @@
                                     <tbody>
                                     <tr>
                                         <th class="cell" scope="row">Bắt đầu vào lúc</th>
-                                        <td class="cell">Monday, 2 August 2021, 1:08 AM</td>
+                                        <td class="cell">${requestScope.startTime}</td>
                                     </tr>
                                     <tr>
-                                        <th class="cell" scope="row">State</th>
-                                        <td class="cell">Finished</td>
+                                        <th class="cell" scope="row">Trạng thái</th>
+                                        <td class="cell">Đã hoàn thành</td>
                                     </tr>
                                     <tr>
                                         <th class="cell" scope="row">Kết thúc lúc</th>
-                                        <td class="cell">Monday, 2 August 2021, 1:10 AM</td>
+                                        <td class="cell">${requestScope.endTime}</td>
                                     </tr>
                                     <tr>
                                         <th class="cell" scope="row">Thời gian thực hiện</th>
-                                        <td class="cell">2 phút 1 giây</td>
+                                        <td class="cell">${requestScope.duringTime}</td>
                                     </tr>
                                     <tr>
                                         <th class="cell" scope="row">Điểm</th>
-                                        <td class="cell"><b>2,00</b> out of 10,00 (<b>20</b>%)</td>
+                                        <td class="cell">${requestScope.quỉzResult}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -193,11 +186,19 @@
                                         <div id="ques_id${ques.question.id}" class="que multichoice deferredfeedback notyetanswered">
                                             <c:if test="${ques.question.type!=-1}">
                                                 <div class="info"><h3 class="no">Câu hỏi <span class="qno"><%out.print(ques_id);%></span></h3>
-                                                    <div class="state">Chưa trả lời</div>
-                                                    <div class="grade">Đạt điểm 1,00</div>
+                                                    <c:choose>
+                                                        <c:when test="${ques.choiced.contentEquals(ques.question.answer)}">
+                                                            <div class="state">Trả lời ĐÚNG</div>
+                                                            <div class="grade">Đạt điểm 1,00</div>
+                                                        </c:when>
+                                                        <c:otherwise>
+                                                            <div class="state">Trả lời SAI</div>
+                                                            <div class="grade">Đạt điểm 0,00</div>
+                                                        </c:otherwise>
+                                                    </c:choose>
                                                     <div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive">
                                                         <input type="hidden" name="${ques.question.id}:flagged" value="0" />
-                                                        <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_<%out.print(ques_id);%>','${ques.question.id}:flaggedimg')" />
+                                                        <input disabled type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_<%out.print(ques_id);%>','${ques.question.id}:flaggedimg')" />
                                                         <input type="hidden" value="" class="questionflagpostdata" />
                                                         <label id="${ques.question.id}:flaggedlabel" for="${ques.question.id}:flaggedcheckbox">
                                                             <img src="${pageContext.request.contextPath}/icon/unflagged.svg" alt="Không gắn cờ" class="questionflagimage" id="${ques.question.id}:flaggedimg" />
@@ -216,14 +217,22 @@
                                                             <%char ch = 'a';%>
                                                             <c:forEach var="ans" items="${ques.answer}">
                                                                 <div class="r0">
-                                                                    <input type="radio" name="${ques.question.id}answer" value="${ans.id}"
+                                                                    <input type="radio" name="${ques.question.id}answer" value="${ans.id}" disabled
+                                                                            <c:if test="${ques.choiced.contentEquals(ans.content)}">checked</c:if>
                                                                            id="${ques.question.id}answer${ans.id}" aria-labelledby="${ques.question.id}answer${ans.id}_label"
                                                                            onclick="setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>')"/>
                                                                     <div class="d-flex w-100" id="${ans.id}answer0_label" data-region="answer-label">
                                                                         <span class="answernumber"><%out.print(ch);%>. </span>
                                                                         <div class="flex-fill ml-1">${ans.content}</div></div>
-                                                                        <i class="icon fa fa-check text-success fa-fw " title="Đúng" aria-label="Đúng" id="yui_3_17_2_1_1630314970443_143"></i>
-                                                                </div>
+                                                                        <c:if test="${ans.content.contentEquals(ques.choiced)}">
+                                                                            <c:if test="${ans.content.contentEquals(ques.question.answer)}">
+                                                                                <i class="icon text-success" title="Đúng" aria-label="Đúng" id="yui_3_17_2_1_1630314970443_143">✔</i>
+                                                                            </c:if>
+                                                                            <c:if test="${!ans.content.contentEquals(ques.question.answer)}">
+                                                                                <i class="icon text-danger" style="fill: red;" title="Sai" aria-label="Sai" id="yui_3_17_2_1_1630314970443_143">❌</i>
+                                                                            </c:if>
+                                                                        </c:if>
+                                                                    </div>
                                                                 <%ch++;%>
                                                             </c:forEach>
                                                         </div>
@@ -233,12 +242,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="outcome clearfix">
-                                                    <h4 class="accesshide">Phản hồi</h4>
-                                                    <div class="feedback">
-                                                        <div class="rightanswer">The correct answer is: Tự phát, duy tâm, duy vật</div>
+                                                <c:if test="${ques.question.type!=-1}">
+                                                    <div class="outcome clearfix">
+                                                        <h4 class="accesshide">Phản hồi</h4>
+                                                        <div class="feedback">
+                                                            <div class="rightanswer">Đáp án chính xác là: ${ques.question.answer}</div>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </c:if>
                                             </div>
                                         </div>
                                         <c:if test="${ques.question.type!=-1}">
@@ -270,10 +281,17 @@
                                         <%int Qid=1;%>
                                         <c:forEach var="i" begin="1" end="${requestScope.mlistQuestion.size()}" step="1">
                                             <c:if test="${requestScope.mlistQuestion.get(i-1).question.type!=-1}">
-                                                <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_<%out.print(Qid);%>" title="Chưa trả lời" data-quiz-page="0"
-                                                   href="#ques_id${requestScope.mlistQuestion.get(i-1).question.id}">
+                                                    <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_<%out.print(Qid);%>" title="chọn" data-quiz-page="0"
+                                                       href="#ques_id${requestScope.mlistQuestion.get(i-1).question.id}">
                                                     <span class="thispageholder"></span>
-                                                    <span class="trafficlight" id="quiznavbutton_<%out.print(Qid);%>_img"></span>
+                                                    <c:choose>
+                                                        <c:when test="${requestScope.mlistQuestion.get(i-1).question.answer.contentEquals(requestScope.mlistQuestion.get(i-1).choiced)}">
+                                                            <span style="background-color: #4fff4f" class="trafficlight" id="quiznavbutton_<%out.print(Qid);%>_img"></span>
+                                                        </c:when>
+                                                        <c:otherwise>
+                                                            <span style="background-color: #ff4c4c" class="trafficlight" id="quiznavbutton_<%out.print(Qid);%>_img"></span>
+                                                        </c:otherwise>
+                                                    </c:choose>
                                                     <span class="accesshide">Question </span> <%out.print(Qid);%>
                                                     <span class="accesshide"> This page <span class="flagstate"></span></span>
                                                 </a>
@@ -287,9 +305,6 @@
                                                 <input type="hidden" name="cmid" value="374677">
                                                 <input type="hidden" name="sesskey" value="5ddeH4Atnk">
                                                 <input type="hidden" name="forcenew" value="1">
-                                                <button type="submit" class="btn btn-secondary"
-                                                        id="single_button6106e311627ef3"
-                                                        title="">Nộp và kết thúc bài làm</button>
                                             </form>
                                         </div>
                                     </div>

@@ -109,8 +109,8 @@
     <div class="quiz-time-left-flex">
         <span class="text">Thời gian còn lại: <span class="time" id="time-left-1210">16:04</span></span>
     </div>
+
     <div class="page-header-wrapper has-course-header-image">
-        <div class="course-header-bg"><div class="course-header-image"></div><div class="mask"></div></div>
         <div class="container-fluid">
             <header id="page-header" class="row">
                 <div class="col-12 pt-3 pb-3">
@@ -225,7 +225,7 @@
                                         <%int Qid=1;%>
                                         <c:forEach var="i" begin="1" end="${requestScope.mlistQuestion.size()}" step="1">
                                             <c:if test="${requestScope.mlistQuestion.get(i-1).question.type!=-1}">
-                                                <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_<%out.print(Qid);%>" title="Chưa trả lời" data-quiz-page="0"
+                                                <a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton_${requestScope.mlistQuestion.get(i-1).question.id}" title="Chưa trả lời" data-quiz-page="0"
                                                    href="#ques_id${requestScope.mlistQuestion.get(i-1).question.id}">
                                                     <span class="thispageholder"></span>
                                                     <span class="trafficlight" id="quiznavbutton_<%out.print(Qid);%>_img"></span>
@@ -238,14 +238,10 @@
                                     </div>
                                     <div class="othernav">
                                         <div class="singlebutton">
-                                            <form method="post" action="#" >
-                                                <input type="hidden" name="cmid" value="374677">
-                                                <input type="hidden" name="sesskey" value="5ddeH4Atnk">
-                                                <input type="hidden" name="forcenew" value="1">
-                                                <button type="submit" class="btn btn-secondary"
-                                                        id="single_button6106e311627ef3"
-                                                        title="">Nộp và kết thúc bài làm</button>
-                                            </form>
+                                            <button class="btn btn-secondary"
+                                                    id="single_button6106e311627ef3"
+                                                    onclick="submitQuiz()"
+                                                    title="">Nộp và kết thúc bài làm</button>
                                         </div>
                                     </div>
                                     <div class="footer"></div>
@@ -265,7 +261,8 @@
     </footer>
 </div>
 <input style="visibility: hidden;" hidden name="dynamic-prefix" value="${pageContext.request.contextPath}" id="112233-page-dynamic-prefix">
-<form name="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Result">
+<form name="Quiz-test-submit-form" id="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Submit">
+    <input name="QuizID" value="TEST01">
     <c:forEach items="${requestScope.mlistQuestion}"  var="ques">
         <input value="" name="<c:out value="${ques.question.id}"/>" id="submit_answer_<c:out value="${ques.question.id}"/>">
     </c:forEach>

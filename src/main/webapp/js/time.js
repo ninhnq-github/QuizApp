@@ -16,7 +16,8 @@ function getServerTime()
         console.log("time: " + data.toString());
     });
     request.fail(function (xhr, msg){
-        window.alert(msg);
+        //window.alert(msg);
+        console.log(msg);
     })
     request.always(function (){
         //console.log("time out: Ajax was call")

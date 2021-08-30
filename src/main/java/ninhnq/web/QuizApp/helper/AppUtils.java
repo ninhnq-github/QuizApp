@@ -49,4 +49,21 @@ public class AppUtils {
         return formatter.format(date);
     }
 
+    public static long getTimeMilis(String time, String pattern)  {
+        SimpleDateFormat formatter = new SimpleDateFormat(pattern);
+        Date date = null;
+        try {
+            date = (Date)formatter.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        long mills = date.getTime();
+        return mills;
+    }
+
+    public static String getDateTimeFormat(long time, String pattern){
+        SimpleDateFormat formatter= new SimpleDateFormat(pattern);
+        Date date = new Date(time);
+        return formatter.format(date);
+    }
 }
