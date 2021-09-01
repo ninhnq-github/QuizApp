@@ -21,7 +21,7 @@ function getServerTime()
             $$('Quiz-test-submit-form').submit();
         }
     });
-    request.fail(function (xhr, msg){
+    request.fail(function (data){
         //window.alert(msg);
         console.log(msg);
     })

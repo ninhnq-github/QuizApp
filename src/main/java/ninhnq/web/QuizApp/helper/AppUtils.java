@@ -1,10 +1,19 @@
 package ninhnq.web.QuizApp.helper;
 
+import ninhnq.web.QuizApp.Entity.Account;
+import ninhnq.web.QuizApp.Entity.QuizResult;
+import ninhnq.web.QuizApp.Entity.Quiztest;
+
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class AppUtils {
 
@@ -66,5 +75,40 @@ public class AppUtils {
         SimpleDateFormat formatter= new SimpleDateFormat(pattern);
         Date date = new Date(time);
         return formatter.format(date);
+    }
+
+    public static void storeSession(HttpSession session, String baseDir){
+        Account user = (Account) session.getAttribute("user");
+        String dir_path = baseDir + "session_backup";
+        String file_name = user.getAccount() + ".txt";
+        LocalObjectWriter writer = new LocalObjectWriter(dir_path+ File.separator + file_name);
+        writer.write(session.getAttribute("quizTest"),false);
+    }
+
+    public static void RestoreSession(HttpSession session, String baseDir){
+        Account user = (Account) session.getAttribute("user");
+        String dir_path = baseDir + "session_backup";
+        String file_name = user.getAccount() + ".txt";
+        LocalObjectReader reader = new LocalObjectReader(dir_path + File.separator +file_name);
+        Quiztest quiz = (Quiztest) reader.read();
+        if (quiz!=null) session.setAttribute("quizTest",quiz);
+    }
+
+    public static List<QuizResult> loadResult(HttpSession session, String baseDir){
+        Account user = (Account) session.getAttribute("user");
+        String dir_path = baseDir + "history";
+        String file_name = user.getAccount() + ".txt";
+        List<QuizResult> listReult = new ArrayList<>();
+        LocalObjectReader reader = new LocalObjectReader(dir_path + File.separator +file_name);
+        try {
+            List<Object> mlis = reader.readList();
+            for (Object obj: mlis)
+                listReult.add((QuizResult) obj);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+        System.out.println("Result has been loaded successfully: " + listReult.size());
+        return listReult;
     }
 }

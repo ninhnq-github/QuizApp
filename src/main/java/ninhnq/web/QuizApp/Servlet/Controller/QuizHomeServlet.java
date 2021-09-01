@@ -2,6 +2,7 @@ package ninhnq.web.QuizApp.Servlet.Controller;
 
 import ninhnq.web.QuizApp.Entity.Account;
 import ninhnq.web.QuizApp.Entity.QuizHeader;
+import ninhnq.web.QuizApp.Entity.QuizResult;
 import ninhnq.web.QuizApp.Entity.Quiztest;
 import ninhnq.web.QuizApp.helper.LocalAccountLoader;
 import ninhnq.web.QuizApp.helper.LocalAssignLoader;
@@ -25,6 +26,13 @@ public class QuizHomeServlet extends HttpServlet {
             response.sendRedirect(getServletContext().getContextPath()+"/login.jsp");
             return;
         }
+
+        Quiztest test = (Quiztest) request.getSession().getAttribute("quizTest");
+        if (test!=null){
+            response.sendRedirect(getServletContext().getContextPath()+"/Quiz?QuizID=" + test.getId());
+            return;
+        }
+
         Account user = (Account) session.getAttribute("user");
         String uid = user.getAccount();
         List<QuizHeader> mlist = LocalAssignLoader.load(getServletContext().getRealPath("/"),uid);

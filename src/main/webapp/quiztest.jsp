@@ -33,15 +33,21 @@
 <script>
     var $$ = function( id ) { return document.getElementById( id ); };
 
-    function onflagged(checkbox, box, img) {
+    function onflagged(qid) {
         var prefix = $$('112233-page-dynamic-prefix').value;
+        let qindex = $$(qid + '_index').value;
+        let checkbox  = qid + ':flaggedcheckbox';
+        let box = 'quiznavbutton_' + qid;
+        let img = qid + ':flaggedimg';
         if ($$(checkbox).checked){
             $$(box).classList.add('flagged');
             $$(img).src =  prefix + '/icon/flagged.svg';
+            setFlag(qindex, 'true');
         }
         else{
             $$(box).classList.remove('flagged');
             $$(img).src = prefix + '/icon/unflagged.svg';
+            setFlag(qindex, 'false');
         }
     }
 
@@ -53,6 +59,8 @@
         let submit_id = 'submit_answer_' + quesid;
         $$(submit_id.toString()).value = "";
         $$('quiznavbutton_' + quesid).title = "Chưa trả lời";
+        let qindex = $$(quesid + '_index').value;
+        setAnswer(qindex, -1);
     }
 
     function setClearchoice(quesid,box,ans)
@@ -65,6 +73,8 @@
         let submit_id = 'submit_answer_' + quesid;
         $$(submit_id).value = $$(ans_id).value;
         $$('quiznavbutton_' + quesid).title = "Đã trả lời";
+        let qindex = $$(quesid + '_index').value;
+        setAnswer(qindex, ans);
     }
 
     function submitQuiz() {
@@ -72,8 +82,76 @@
         if (isExecuted)
             $$('Quiz-test-submit-form').submit();
     }
+
+    function setAnswer(quesid, ansid){
+        var prefix = $$('112233-page-dynamic-prefix').value;
+        if (prefix==null) prefix="";
+        request_data = {
+            question: quesid,
+            answer: ansid
+        }
+        let request = $.ajax({
+            url: prefix + '/AnswerAPI',
+            type: 'POST',
+            dataType: 'text',
+            data: request_data
+        });
+        request.done(function (data) {
+            console.log("send answer done!!!");
+        });
+        request.fail(function (msg){
+            //window.alert(msg);
+            console.log(msg);
+        })
+        request.always(function (){
+            //console.log("time out: Ajax was call")
+        });
+    }
+
+    function setFlag(quesid, flag){
+        var prefix = $$('112233-page-dynamic-prefix').value;
+        if (prefix==null) prefix="";
+        request_data = {
+            question: quesid,
+            flag: flag
+        }
+        let request = $.ajax({
+            url: prefix + '/FlagAPI',
+            type: 'POST',
+            dataType: 'text',
+            data: request_data
+        });
+        request.done(function (data) {
+            console.log("send flag done!!!");
+        });
+        request.fail(function (msg){
+            //window.alert(msg);
+            console.log(msg);
+        })
+        request.always(function (){
+            //console.log("time out: Ajax was call")
+        });
+    }
+    function docReady(fn) {
+        // see if DOM is already available
+        if (document.readyState === "complete" || document.readyState === "interactive") {
+            // call on next available tick
+            setTimeout(fn, 1);
+        } else {
+            document.addEventListener("DOMContentLoaded", fn);
+        }
+    }
 </script>
 <body  onload="getServerTime()" id="page-mod-quiz-attempt" class="format-topics  path-mod path-mod-quiz chrome dir-ltr lang-vi yui-skin-sam yui3-skin-sam pagelayout-incourse category-81">
+<input style="visibility: hidden;" hidden name="dynamic-prefix" value="${pageContext.request.contextPath}" id="112233-page-dynamic-prefix">
+<input style="visibility: hidden;" hidden name="TimeStart" value="${requestScope.StartTime}" id="112233-time-start">
+<input style="visibility: hidden;" hidden name="TimeLimit" value="${requestScope.LimitTime}" id="112233-time-limit">
+<form name="Quiz-test-submit-form" id="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Submit">
+    <input name="QuizID" value="${requestScope.QuizID}">
+    <c:forEach items="${requestScope.mlistQuestion}"  var="ques">
+        <input value="" name="<c:out value="${ques.question.id}"/>" id="submit_answer_<c:out value="${ques.question.id}"/>">
+    </c:forEach>
+</form>
 <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
 <div id="page-wrapper" class="page-wrapper ">
     <header id="header" class="page-header page-header-top-bar navbar" role="banner">
@@ -114,14 +192,14 @@
                                                                 <b class="caret"></b>
                                                             </a>
                                                             <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                                <a href="${pageContext.request.contextPath}/Home" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
                                                                     <i class="icon" aria-hidden="true"  >☖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-1">Nhà của tôi</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                                <a href="${pageContext.request.contextPath}/History" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
                                                                     <i class="icon" aria-hidden="true">✍</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-2">Hồ sơ</span>
                                                                 </a>
@@ -202,6 +280,7 @@
                                 <div>
                                 <%int ques_id = 1;%>
                                 <c:forEach var="ques" items="${requestScope.mlistQuestion}">
+                                    <input hidden id="${ques.question.id}_index" value="<%out.print(ques_id-1);%>">
                                     <div id="ques_id${ques.question.id}" class="que multichoice deferredfeedback notyetanswered">
                                         <c:if test="${ques.question.type!=-1}">
                                             <div class="info"><h3 class="no">Câu hỏi <span class="qno"><%out.print(ques_id);%></span></h3>
@@ -209,12 +288,22 @@
                                                 <div class="grade">Đạt điểm 1,00</div>
                                                 <div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive">
                                                     <input type="hidden" name="${ques.question.id}:flagged" value="0" />
-                                                    <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_${ques.question.id}','${ques.question.id}:flaggedimg')" />
+                                                    <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1"
+                                                           <c:if test="${ques.flagged == true}">checked</c:if>
+                                                           onclick="onflagged('${ques.question.id}')" />
                                                     <input type="hidden" value="" class="questionflagpostdata" />
                                                     <label id="${ques.question.id}:flaggedlabel" for="${ques.question.id}:flaggedcheckbox">
                                                         <img src="${pageContext.request.contextPath}/icon/unflagged.svg" alt="Không gắn cờ" class="questionflagimage" id="${ques.question.id}:flaggedimg" />
                                                         <span>Đặt cờ</span>
                                                     </label>
+                                                    <c:if test="${ques.flagged == true}">
+                                                        <script>
+                                                            docReady(function() {
+                                                                // DOM is loaded and ready for manipulation here
+                                                                onflagged('${ques.question.id}');
+                                                            });
+                                                        </script>
+                                                    </c:if>
                                                 </div>
                                             </div>
                                         </c:if>
@@ -228,18 +317,28 @@
                                                         <%char ch = 'a';%>
                                                         <c:forEach var="ans" items="${ques.answer}">
                                                             <div class="r0">
-                                                                <input type="radio" name="${ques.question.id}answer" value="${ans.content}"
+                                                                <input type="radio" name="${ques.question.id}answer" value="${ans.content}" <c:if test="${ques.choiced.contentEquals(ans.content)}">checked</c:if>
                                                                        id="${ques.question.id}answer${ans.id}" aria-labelledby="${ques.question.id}answer${ans.id}_label"
-                                                                       onclick="setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>','${ans.id}')"/>
+                                                                       onclick="setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>',${ans.id})"/>
                                                                 <div class="d-flex w-100" id="${ans.id}answer0_label" data-region="answer-label">
                                                                     <span class="answernumber"><%out.print(ch);%>. </span>
-                                                                    <div class="flex-fill ml-1">${ans.content}</div></div></div>
+                                                                    <div class="flex-fill ml-1">${ans.content}</div>
+                                                                </div>
+                                                                <c:if test="${ques.choiced.contentEquals(ans.content)}">
+                                                                    <script language="JavaScript">
+                                                                        docReady(function() {
+                                                                            // DOM is loaded and ready for manipulation here
+                                                                            setClearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>',${ans.id});
+                                                                        });
+                                                                    </script>
+                                                                </c:if>
+                                                            </div>
                                                             <%ch++;%>
                                                         </c:forEach>
                                                     </div>
                                                     <div id="${ques.question.id}_clearchoice" class="qtype_multichoice_clearchoice" hidden="true">
                                                         <input type="radio" name="${ques.question.id}answer" id="${ques.question.id}answer-1" value="-1" class="sr-only" aria-hidden="true">
-                                                        <label for="${ques.question.id}answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1 mb-n1" href="#" onclick="clearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>')">Clear my choice</a></label>
+                                                        <label for="${ques.question.id}answer-1"><a style="color: orange;" tabindex="0" role="button" class="btn btn-link ml-3 mt-n1 mb-n1" onclick="clearchoice('${ques.question.id}','quiznavbutton_<%out.print(ques_id);%>')">Clear my choice</a></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -308,14 +407,5 @@
         </div>
     </footer>
 </div>
-<input style="visibility: hidden;" hidden name="dynamic-prefix" value="${pageContext.request.contextPath}" id="112233-page-dynamic-prefix">
-<input style="visibility: hidden;" hidden name="TimeStart" value="${requestScope.StartTime}" id="112233-time-start">
-<input style="visibility: hidden;" hidden name="TimeLimit" value="${requestScope.LimitTime}" id="112233-time-limit">
-<form name="Quiz-test-submit-form" id="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Submit">
-    <input name="QuizID" value="${requestScope.QuizID}">
-    <c:forEach items="${requestScope.mlistQuestion}"  var="ques">
-        <input value="" name="<c:out value="${ques.question.id}"/>" id="submit_answer_<c:out value="${ques.question.id}"/>">
-    </c:forEach>
-</form>
 </body>
 </html>

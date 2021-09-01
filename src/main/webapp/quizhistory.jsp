@@ -77,14 +77,14 @@
                                 <b class="caret"></b>
                               </a>
                               <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
-                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                <a href="${pageContext.request.contextPath}/Home" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
                                   <i class="icon" aria-hidden="true"  >☖</i>
                                   <span class="menu-action-text" id="actionmenuaction-1">Nhà của tôi</span>
                                 </a>
 
                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
-                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                <a href="${pageContext.request.contextPath}/History" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
                                   <i class="icon" aria-hidden="true">✍</i>
                                   <span class="menu-action-text" id="actionmenuaction-2">Hồ sơ</span>
                                 </a>
@@ -139,32 +139,22 @@
                             <th>MÃ BÀI THI</th>
                             <th>TÊN BÀI THI</th>
                             <th>SỐ CÂU HỎI</th>
-                            <th>LÀM BÀI</th>
-                            <th>NỘP BÀI</th>
+                            <th>BẮT ĐẦU/KẾT THÚC</th>
+                            <th>ĐIỂM SỐ</th>
                             <th>XEM LẠI</th>
                           </tr>
                           </thead>
                           <tbody>
-                          <c:forEach var="quiz" items="${requestScope.quizAssigned}">
+                          <c:forEach var="result" items="${requestScope.quizHistory}">
                             <tr>
-                              <th scope="row"><c:out value="${quiz.id}"/></th>
-                              <td><c:out value="${quiz.name}"/></td>
+                              <th scope="row"><c:out value="${result.quizID}"/></th>
+                              <td><c:out value="${result.name}"/></td>
+                              <td><c:out value="${result.noques} câu hỏi"/>/<c:out value="${result.time} phút"/></td>
+                              <td><c:out value="${result.start}"/>-<c:out value="${result.end}"/></td>
+                              <td>Làm đúng:<c:out value="${result.correct}"/>, đạt <c:out value="${result.grade_point}"/> số điểm</td>
                               <c:choose>
-                                <c:when test="${!quiz.ques.contentEquals('//')}">
-                                  <td><c:out value="${quiz.ques}"/> Câu / <c:out value="${quiz.time}"/> Phút</td>
-                                </c:when>
-                                <c:otherwise>
-                                  <td>//</td>
-                                </c:otherwise>
-                              </c:choose>
-                              <td><c:out value="${quiz.open}"/></td>
-                              <td><c:out value="${quiz.close}"/></td>
-                              <c:choose>
-                                <c:when test="${quiz.status.contentEquals('OPEN')}">
-                                  <td><a type="button" onclick="doTest('${quiz.id}')" class="btn btn-success">LÀM BÀI</a></td>
-                                </c:when>
-                                <c:when test="${quiz.status.contentEquals('WAIT')}">
-                                  <td><a href="#" class="btn btn-warning">CHƯA MỞ</a></td>
+                                <c:when test="${result.review.contentEquals('allow')}">
+                                  <td><a type="button" href="${pageContext.request.contextPath}/Result?QuizID=${result.quizID}&tid=${result.lstart}" class="btn btn-success">XEM LẠI</a></td>
                                 </c:when>
                                 <c:otherwise>
                                   <td><a href="#" class="btn btn-danger">ĐÃ ĐÓNG</a></td>

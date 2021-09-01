@@ -2,6 +2,7 @@ package ninhnq.web.QuizApp.helper;
 
 import ninhnq.web.QuizApp.Entity.*;
 
+import javax.mail.Header;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -114,7 +115,7 @@ public class LocalQuizTestLoader {
                         mlistAnswer.add(answerEntity);
                         //System.out.println(answerEntity.toString());
                     }
-                    TestQuestion tq = new TestQuestion(questionEntity,mlistAnswer);
+                    TestQuestion tq = new TestQuestion(questionEntity,mlistAnswer,"null");
                     testQuestion.add(tq);
                     //System.out.println("Question - out-------------------------------------------------");
                 }
@@ -175,5 +176,39 @@ public class LocalQuizTestLoader {
         }
         if (checksum!=11111) return new QuizHeader(new Quiztest(testID));
         return new QuizHeader(quizTest);
+    }
+
+    public static boolean check(String baseDir, String testID){
+        String TEST_DIRECTORY = "question_bank";
+        String testPath = baseDir + TEST_DIRECTORY;
+        String testFileName = testPath + File.separator + testID + ".txt";
+        int checksum = 0;
+        try {
+            FileInputStream testFile = new FileInputStream(testFileName);
+            InputStreamReader reader = new InputStreamReader(testFile, "UTF8");
+            Scanner in = new Scanner(reader);
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                if (line.trim().equals("")) continue;
+                if (line.startsWith("<NAME>")){
+                    checksum += 1;
+                } else if (line.startsWith("<TIME>")){
+                    checksum += 10;
+                } else if (line.startsWith("<QUES>")){
+                    checksum += 100;
+                } else if (line.startsWith("<OPEN>")){
+                    checksum += 1000;
+                } else if (line.startsWith("<CLOSE>")){
+                    checksum += 10000;
+                }
+                if (checksum==11111) break;
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+        if (checksum!=11111) return false;
+        return true;
     }
 }

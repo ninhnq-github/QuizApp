@@ -1,7 +1,9 @@
 package ninhnq.web.QuizApp.Servlet.Controller;
 
 import ninhnq.web.QuizApp.Entity.Account;
+import ninhnq.web.QuizApp.helper.AppUtils;
 import ninhnq.web.QuizApp.helper.LocalAccountLoader;
+import ninhnq.web.QuizApp.helper.LocalObjectReader;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,6 +41,9 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("user",acc);
                 session.setAttribute("authentication","valid");
                 session.setAttribute("status","online");
+                //------------------------------------------------------------
+                AppUtils.RestoreSession(request.getSession(),getServletContext().getRealPath("/"));
+                //------------------------------------------------------------
                 request.setAttribute("user_name",acc.getName());
                 response.sendRedirect(getServletContext().getContextPath() + "/Home");
                 return;

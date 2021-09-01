@@ -76,14 +76,14 @@
                                                                 <b class="caret"></b>
                                                             </a>
                                                             <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                                <a href="${pageContext.request.contextPath}/Home" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
                                                                     <i class="icon" aria-hidden="true"  >☖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-1">Nhà của tôi</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                                <a href="${pageContext.request.contextPath}/History" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
                                                                     <i class="icon" aria-hidden="true">✍</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-2">Hồ sơ</span>
                                                                 </a>

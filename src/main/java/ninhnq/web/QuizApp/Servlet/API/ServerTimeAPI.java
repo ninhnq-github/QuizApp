@@ -24,6 +24,10 @@ public class ServerTimeAPI extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
+        if (request.getSession()==null || request.getSession().getAttribute("authentication") == null) {
+            out.print("TIMEOUT");
+            return;
+        }
         if (request.getSession()==null){
             String time_start = request.getParameter("TimeStart");
             String time_limit = request.getParameter("TimeLimit");

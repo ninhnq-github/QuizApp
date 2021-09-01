@@ -4,10 +4,28 @@ import ninhnq.web.QuizApp.helper.AppUtils;
 
 public class QuizHeader {
     String id;
+    long openl, closel;
     String name;
     String ques;
     String time;
     String open;
+    String status;
+
+    public long getOpenl() {
+        return openl;
+    }
+
+    public void setOpenl(long openl) {
+        this.openl = openl;
+    }
+
+    public long getClosel() {
+        return closel;
+    }
+
+    public void setClosel(long closel) {
+        this.closel = closel;
+    }
 
     public String getStatus() {
         return status;
@@ -16,8 +34,6 @@ public class QuizHeader {
     public void setStatus(String status) {
         this.status = status;
     }
-
-    String status;
 
     public String getId() {
         return id;
@@ -102,5 +118,8 @@ public class QuizHeader {
             this.status = "WAIT";
         } else
             this.status = "CLOSED";
+
+        this.openl = q.getStart();
+        this.closel = q.getEnd();
     }
 }

@@ -7,10 +7,10 @@ import java.io.*;
 import java.util.Scanner;
 
 public class LocalSubmissionLoader {
-    public static void load(String baseDir, String uid, String tid, int attempt, Quiztest quiz){
+    public static void load(String baseDir, String uid, String tid, long time, Quiztest quiz){
         String SUBMITION_DIRECTORY = "submission";
         String dirPath = baseDir + SUBMITION_DIRECTORY;
-        String filename = tid + "$" + uid + "$" + attempt + ".txt";
+        String filename = tid + "$" + uid + "$" + time + ".txt";
         String filePath = dirPath + File.separator + filename;
         FileInputStream testFile = null;
         //System.out.println("Start to write to: " + filePath);

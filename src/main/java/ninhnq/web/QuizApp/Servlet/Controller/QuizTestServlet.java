@@ -2,11 +2,14 @@ package ninhnq.web.QuizApp.Servlet.Controller;
 
 import com.mysql.cj.Session;
 import ninhnq.web.QuizApp.Entity.*;
+import ninhnq.web.QuizApp.helper.AppUtils;
+import ninhnq.web.QuizApp.helper.LocalObjectWriter;
 import ninhnq.web.QuizApp.helper.LocalQuizTestLoader;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,19 +23,45 @@ public class QuizTestServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
 
         String testID = request.getParameter("QuizID");
+
+        if (LocalQuizTestLoader.check(getServletContext().getRealPath("/"),testID)==false) {
+            response.getWriter().println("Bài kiểm tra không tồn tại!, " +
+                    "<a href='"+getServletContext().getContextPath()+"/login.jsp'>quay về</a>");
+            return;
+        }
+
+        QuizHeader header = LocalQuizTestLoader.load_header(getServletContext().getRealPath("/"),testID);
+        if (System.currentTimeMillis() < header.getOpenl() || System.currentTimeMillis() > header.getClosel())
+        {
+            response.getWriter().println("Bài quiz đã đóng hoặc chưa mở, " +
+                    "<a href='"+getServletContext().getContextPath()+"/login.jsp'>quay về</a>");
+            return;
+        }
+
         Quiztest quizTest = null;
         if (request.getSession().getAttribute("quizTest")==null)
         {
+
             quizTest = LocalQuizTestLoader.load(getServletContext().getRealPath("/"),testID);
             quizTest.setStart(System.currentTimeMillis());
             request.getSession().setAttribute("quizTest",quizTest);
+            AppUtils.storeSession(request.getSession(),getServletContext().getRealPath("/"));
         }
         else
         {
             quizTest = (Quiztest) request.getSession().getAttribute("quizTest");
         }
-        Account user = (Account) request.getSession().getAttribute("user");
 
+        header = LocalQuizTestLoader.load_header(getServletContext().getRealPath("/"),quizTest.getId());
+        if (System.currentTimeMillis() < header.getOpenl() || System.currentTimeMillis() > header.getClosel())
+        {
+            request.getSession().setAttribute("quizTest",null);
+            AppUtils.storeSession(request.getSession(),getServletContext().getRealPath("/"));
+            response.sendRedirect(getServletContext().getContextPath()+"/Home");
+            return;
+        }
+
+        Account user = (Account) request.getSession().getAttribute("user");
         request.setAttribute("quiz_title","TRẮC NGHIỆM CÔNG CHỨC");
         request.setAttribute("user_name",user.getName());
         request.setAttribute("mQuizTest",quizTest);

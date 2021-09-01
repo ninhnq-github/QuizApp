@@ -1,8 +1,9 @@
 package ninhnq.web.QuizApp.Entity;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TestQuestion {
+public class TestQuestion  implements Serializable {
     public QuestionEntity getQuestion() {
         return question;
     }
@@ -41,5 +42,15 @@ public class TestQuestion {
     public TestQuestion(QuestionEntity question, List<AnswerEntity> answer) {
         this.question = question;
         this.answer = answer;
+    }
+
+    private boolean flagged;
+
+    public boolean isFlagged() {
+        return flagged;
+    }
+
+    public void setFlagged(boolean flagged) {
+        this.flagged = flagged;
     }
 }

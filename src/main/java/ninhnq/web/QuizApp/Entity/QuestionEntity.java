@@ -7,11 +7,12 @@ import org.hibernate.query.Query;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "question", schema = "quizappdb", catalog = "")
-public class QuestionEntity {
+public class QuestionEntity  implements Serializable {
     private int id;
     private Integer bid;
 

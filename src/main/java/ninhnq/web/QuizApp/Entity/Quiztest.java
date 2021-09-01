@@ -1,24 +1,12 @@
 package ninhnq.web.QuizApp.Entity;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-public class Quiztest {
+public class Quiztest implements Serializable {
     public String getId() {
         return id;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Quiztest)) return false;
-        Quiztest quiztest = (Quiztest) o;
-        return getPoint() == quiztest.getPoint() && getNoques() == quiztest.getNoques() && getTime() == quiztest.getTime() && getStart() == quiztest.getStart() && getEnd() == quiztest.getEnd() && Objects.equals(getId(), quiztest.getId()) && Objects.equals(getName(), quiztest.getName()) && Objects.equals(getQuestions(), quiztest.getQuestions());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getName(), getPoint(), getNoques(), getTime(), getStart(), getEnd(), getQuestions());
     }
 
     public void setId(String id) {
@@ -113,4 +101,19 @@ public class Quiztest {
     }
 
     List<TestQuestion> questions;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Quiztest)) return false;
+        Quiztest quiztest = (Quiztest) o;
+        return getPoint() == quiztest.getPoint() && getNoques() == quiztest.getNoques() && getTime() == quiztest.getTime() && getStart() == quiztest.getStart() && getEnd() == quiztest.getEnd() && Objects.equals(getId(), quiztest.getId()) && Objects.equals(getName(), quiztest.getName()) && Objects.equals(getQuestions(), quiztest.getQuestions());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getPoint(), getNoques(), getTime(), getStart(), getEnd(), getQuestions());
+    }
+
+
 }
