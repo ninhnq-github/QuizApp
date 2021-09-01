@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class AppUtils {
+
     public static String getNextDate(int days){
         final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date date = null;

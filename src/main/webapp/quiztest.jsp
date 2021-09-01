@@ -10,6 +10,8 @@
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix = "sql" uri = "http://java.sun.com/jsp/jstl/sql" %>
 <%@ taglib prefix = "x" uri = "http://java.sun.com/jsp/jstl/xml" %>
+<%if (session.getAttribute("authentication")==null)
+    response.sendRedirect(pageContext.getServletContext().getContextPath()+"/login.jsp");%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +27,52 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/newstyle.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/quiz.js"></script>
+    <script src="${pageContext.request.contextPath}/js/home.js"></script>
     <script src="${pageContext.request.contextPath}/js/time.js"></script>
 </head>
+<script>
+    var $$ = function( id ) { return document.getElementById( id ); };
+
+    function onflagged(checkbox, box, img) {
+        var prefix = $$('112233-page-dynamic-prefix').value;
+        if ($$(checkbox).checked){
+            $$(box).classList.add('flagged');
+            $$(img).src =  prefix + '/icon/flagged.svg';
+        }
+        else{
+            $$(box).classList.remove('flagged');
+            $$(img).src = prefix + '/icon/unflagged.svg';
+        }
+    }
+
+    function clearchoice(quesid, box)
+    {
+        $$(quesid+'answer-1').checked = true;
+        $$(quesid+'_clearchoice').hidden = true;
+        $$(box+'_img').style.backgroundColor = "rgba(0,189,49,0)";
+        let submit_id = 'submit_answer_' + quesid;
+        $$(submit_id.toString()).value = "";
+        $$('quiznavbutton_' + quesid).title = "Chưa trả lời";
+    }
+
+    function setClearchoice(quesid,box,ans)
+    {
+        var prefix = $$('112233-page-dynamic-prefix').value;
+        $$(quesid+'_clearchoice').hidden = false;
+        var url = prefix + '/icon/checked.png';
+        $$(box+'_img').style.backgroundColor = "#95e0f5";
+        let ans_id = quesid + 'answer' + ans;
+        let submit_id = 'submit_answer_' + quesid;
+        $$(submit_id).value = $$(ans_id).value;
+        $$('quiznavbutton_' + quesid).title = "Đã trả lời";
+    }
+
+    function submitQuiz() {
+        let isExecuted = confirm("Bạn có chắc là muốn nộp bài hay không?");
+        if (isExecuted)
+            $$('Quiz-test-submit-form').submit();
+    }
+</script>
 <body  onload="getServerTime()" id="page-mod-quiz-attempt" class="format-topics  path-mod path-mod-quiz chrome dir-ltr lang-vi yui-skin-sam yui3-skin-sam pagelayout-incourse category-81">
 <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
 <div id="page-wrapper" class="page-wrapper ">
@@ -35,7 +81,7 @@
             <div class="container-fluid">
                 <div class="top-bar-inner">
                     <div class="special-wrapper navbar">
-                        <div class="app-name-main">
+                        <div class="app-name-main" style="padding-top: -10px;">
                             <img src="${pageContext.request.contextPath}/icon/app-icon.svg" class="app-icon-img">
                             <span class="app-name-text">PHẦN MỀM THI TRẮC NGHIỆM ONLINE</span>
                         </div>
@@ -69,30 +115,32 @@
                                                             </a>
                                                             <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
-                                                                    <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true"  >☖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-1">Nhà của tôi</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
-                                                                    <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true">✍</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-2">Hồ sơ</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
                                                                 <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
-                                                                    <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                                                                    <i class="icon" aria-hidden="true">❏</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-3">Điểm</span>
                                                                 </a>
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
-                                                                    <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                                                <a onclick="logout()" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                                    <i class="icon " aria-hidden="true"  >✖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-6">Thoát</span>
                                                                 </a>
+
+                                                                <form id="112233-logout-form" name="logout-form" action="${pageContext.request.contextPath}/Logout" method="POST" hidden></form>
 
                                                             </div>
                                                         </div>
@@ -161,7 +209,7 @@
                                                 <div class="grade">Đạt điểm 1,00</div>
                                                 <div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive">
                                                     <input type="hidden" name="${ques.question.id}:flagged" value="0" />
-                                                    <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_<%out.print(ques_id);%>','${ques.question.id}:flaggedimg')" />
+                                                    <input type="checkbox" id="${ques.question.id}:flaggedcheckbox" name="${ques.question.id}:flagged" value="1" onclick="onflagged('${ques.question.id}:flaggedcheckbox','quiznavbutton_${ques.question.id}','${ques.question.id}:flaggedimg')" />
                                                     <input type="hidden" value="" class="questionflagpostdata" />
                                                     <label id="${ques.question.id}:flaggedlabel" for="${ques.question.id}:flaggedcheckbox">
                                                         <img src="${pageContext.request.contextPath}/icon/unflagged.svg" alt="Không gắn cờ" class="questionflagimage" id="${ques.question.id}:flaggedimg" />
@@ -261,8 +309,10 @@
     </footer>
 </div>
 <input style="visibility: hidden;" hidden name="dynamic-prefix" value="${pageContext.request.contextPath}" id="112233-page-dynamic-prefix">
+<input style="visibility: hidden;" hidden name="TimeStart" value="${requestScope.StartTime}" id="112233-time-start">
+<input style="visibility: hidden;" hidden name="TimeLimit" value="${requestScope.LimitTime}" id="112233-time-limit">
 <form name="Quiz-test-submit-form" id="Quiz-test-submit-form" hidden method="POST" action="${pageContext.request.contextPath}/Submit">
-    <input name="QuizID" value="TEST01">
+    <input name="QuizID" value="${requestScope.QuizID}">
     <c:forEach items="${requestScope.mlistQuestion}"  var="ques">
         <input value="" name="<c:out value="${ques.question.id}"/>" id="submit_answer_<c:out value="${ques.question.id}"/>">
     </c:forEach>

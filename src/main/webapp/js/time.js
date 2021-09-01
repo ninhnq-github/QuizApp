@@ -1,8 +1,10 @@
+var $$ = function( id ) { return document.getElementById( id ); };
 function getServerTime()
 {
     //console.log("Timeout was called");
     let prefix = document.getElementById('112233-page-dynamic-prefix').value;
-    let data = {'auth':191122333, 'key': 256611129};
+    let data = {'TimeStart': $$('112233-time-start').value,
+                'TimeLimit': $$('112233-time-limit').value };
     let request = $.ajax({
         type: "GET",
         dataType: "html",
@@ -12,8 +14,12 @@ function getServerTime()
     request.done(function (data) {
         $$("time-left-1210").innerHTML = data;
         if (data.toString() === "TIMEOUT")
+        {
+            console.log("time: " + data.toString());
             break_timer();
-        console.log("time: " + data.toString());
+            alert("Đã hết giờ làm bài!");
+            $$('Quiz-test-submit-form').submit();
+        }
     });
     request.fail(function (xhr, msg){
         //window.alert(msg);

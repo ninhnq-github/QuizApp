@@ -1,22 +1,15 @@
 package ninhnq.web.QuizApp.Servlet.Controller;
 
-import ninhnq.web.QuizApp.Entity.AnswerEntity;
-import ninhnq.web.QuizApp.Entity.QuestionEntity;
-import ninhnq.web.QuizApp.Entity.QuiztestEntity;
-import ninhnq.web.QuizApp.Entity.TestQuestion;
+import com.mysql.cj.Session;
+import ninhnq.web.QuizApp.Entity.*;
 import ninhnq.web.QuizApp.helper.LocalQuizTestLoader;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
 
 @WebServlet(name = "QuizTestServlet", value = "/Quiz")
 public class QuizTestServlet extends HttpServlet {
@@ -25,22 +18,31 @@ public class QuizTestServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
-        //dotest(request);
 
-        //String TEST_DIRECTORY = "question_bank";
-        //String testPath = getServletContext().getRealPath("/") + TEST_DIRECTORY;
         String testID = request.getParameter("QuizID");
-        //String testFileName = testPath + File.separator + testID + ".txt";
-
-        QuiztestEntity quizTest = LocalQuizTestLoader.load(getServletContext().getRealPath("/"),testID);
+        Quiztest quizTest = null;
+        if (request.getSession().getAttribute("quizTest")==null)
+        {
+            quizTest = LocalQuizTestLoader.load(getServletContext().getRealPath("/"),testID);
+            quizTest.setStart(System.currentTimeMillis());
+            request.getSession().setAttribute("quizTest",quizTest);
+        }
+        else
+        {
+            quizTest = (Quiztest) request.getSession().getAttribute("quizTest");
+        }
+        Account user = (Account) request.getSession().getAttribute("user");
 
         request.setAttribute("quiz_title","TRẮC NGHIỆM CÔNG CHỨC");
-        request.setAttribute("user_name","Nguyen Quoc Ninh");
+        request.setAttribute("user_name",user.getName());
         request.setAttribute("mQuizTest",quizTest);
         request.setAttribute("mlistQuestion",quizTest.getQuestions());
         request.setAttribute("no_ques",quizTest.getPoint());
         request.setAttribute("quiz_name",quizTest.getName());
         request.setAttribute("time",quizTest.getTime());
+        request.setAttribute("QuizID",quizTest.getId());
+        request.setAttribute("StartTime",quizTest.getStart());
+        request.setAttribute("LimitTime",quizTest.getTime());
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/quiztest.jsp");
         dispatcher.forward(request,response);

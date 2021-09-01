@@ -17,12 +17,12 @@ public class QuizServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
 
-        System.out.println(this.getServletName() + "was called...........................................................");
+        //System.out.println(this.getServletName() + "was called...........................................................");
         List<QuestionEntity> part1_q, part2_q;
         part1_q = QuestionEntity.get_by_bank(1);
-        System.out.println(this.getServletName() + ": PART1 ------" + part1_q.size());
+        //System.out.println(this.getServletName() + ": PART1 ------" + part1_q.size());
         part2_q = QuestionEntity.get_by_bank(0);
-        System.out.println(this.getServletName() + ": PART2 ------" + part2_q.size());
+        //System.out.println(this.getServletName() + ": PART2 ------" + part2_q.size());
 
         QuestionEntity[] part1 = new QuestionEntity[part1_q.size()];
         for (int i=0; i<part1_q.size(); i++) part1[i] = part1_q.get(i);
@@ -30,8 +30,8 @@ public class QuizServlet extends HttpServlet {
         QuestionEntity[] part2 = new QuestionEntity[part2_q.size()];
         for (int i=0; i<part2_q.size(); i++) part2[i] = part2_q.get(i);
 
-        System.out.println("This is the size of part1: " + part1_q.size());
-        System.out.println("This is the size of part2: " + part2_q.size());
+        //System.out.println("This is the size of part1: " + part1_q.size());
+        //System.out.println("This is the size of part2: " + part2_q.size());
 
         Random rand = new Random();
         for (int i=0; i<100; i++){
@@ -74,7 +74,7 @@ public class QuizServlet extends HttpServlet {
             Test[i] += part4_title + "\n" + "\n";
 
             out.println(Test[i].replace("\n","<br>"));
-            System.out.println(Test[i]);
+            //System.out.println(Test[i]);
         }
     }
 

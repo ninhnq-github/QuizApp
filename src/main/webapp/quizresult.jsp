@@ -11,9 +11,10 @@
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix = "sql" uri = "http://java.sun.com/jsp/jstl/sql" %>
 <%@ taglib prefix = "x" uri = "http://java.sun.com/jsp/jstl/xml" %>
+<%if (session.getAttribute("authentication")==null)
+    response.sendRedirect(pageContext.getServletContext().getContextPath()+"/login.jsp");%>
 <html>
 <head>
-
     <title><c:out value="${requestScope.quiz_title.toString()}"/></title>
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/icon/quiz.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -23,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/yui-moodlesimple-min.css"/>
     <script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/all.css"/>
+    <script src="${pageContext.request.contextPath}/js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/newstyle.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/quiz.js"></script>
@@ -93,10 +95,12 @@
 
                                                                 <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
 
-                                                                <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                                <a onclick="logout()" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
                                                                     <i class="icon " aria-hidden="true"  >✖</i>
                                                                     <span class="menu-action-text" id="actionmenuaction-6">Thoát</span>
                                                                 </a>
+
+                                                                <form id="112233-logout-form" name="logout-form" action="${pageContext.request.contextPath}/Logout" method="POST" hidden></form>
 
                                                             </div>
                                                         </div>

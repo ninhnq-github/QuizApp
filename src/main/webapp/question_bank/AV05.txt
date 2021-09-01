@@ -1,0 +1,241 @@
+<NAME> THI THỬ TIẾNG ANH - ĐỀ 04
+<TIME> 30
+<QUES> 30
+<OPEN> 04-09-2021 19:15:00
+<CLOSE> 04-09-2021 19:45:00 
+<TRY> 1
+<REVIEW> YES
+<SHOW> YES
+<LOGIN> YES
+
+<TITLE>PART 1: ERROR RECOGNITION / DIRECTIONS: Identify the one underlined word or phrase A, B, C, or D that should be corrected or rewritten.
+
+Question 1. The fruit and vegetables at the Shop Mart are always very fresh because they were shipped in every day from the local farm markets.
+A. fruit
+B. they
+C. were
+D. farm markets
+ANSWER: C
+
+Question 2. The governor, with his wife and children, are at home watching the election returns on television.
+A. his
+B. are
+C. watching
+D. on television
+ANSWER: B
+
+Question 3. Between one thing and another, Anna does not get through with her term paper last Friday.
+A. one thing and another
+B. does
+C. with
+D. term paper
+ANSWER: B
+
+Question 4. Everyone who takes the examination will receive their score reports in six weeks.
+A. who
+B. takes
+C. their
+D. in six weeks
+ANSWER: C
+
+Question 5. Dew usually disappeared by seven o'clock in the morning when the sun comes up.
+A. usually
+B. disappeared
+C. by
+D. in the morning
+ANSWER: B
+
+<TITLE>PART 2: GRAMMAR AND VOCABULARY / DIRECTIONS: Choose the best option to complete each following sentence.
+
+Question 6. There was a great deal of machinery. This means there ……………….
+A. was one big machine
+B. was one big engine
+C. were many machines
+D. was one powerful machine
+ANSWER: C
+
+Question 7. Their hosts ……………… them a very warm welcome.
+A. did
+B. had
+C. made
+D. gave
+ANSWER: D
+
+Question 8. He did everything he could to attract her ………………: shouted, whistled, waved his arms-but she still didn’t see him.
+A. attention
+B. notice
+C. recognition
+D. eyesight
+ANSWER: A
+
+Question 9. Now, let's ……………… the original with the copy.
+A. comparing
+B. compares
+C. compared
+D. compare
+ANSWER: D
+
+Question 10. Fish were among the earliest forms of life. Fish ……………… on earth for ages and ages.
+A. existed
+B. are existing
+C. exists
+D. have existed
+ANSWER: D
+
+Question 11. I am expected ……………… the result of the last exam.
+A. knowing
+B. to know
+C. know
+D. knew
+ANSWER: B
+
+Question 12. This time next week they ……………… to London.
+A. will be flying
+B. will fly
+C. are flying
+D. have flown
+ANSWER: A
+
+Question 13. “I saw Paul at the theatre yesterday.” “You ………………. He’s in the hospital.”
+A. won’t have
+B. couldn’t have
+C. should have
+D. could have
+ANSWER: B
+
+Question 14. ……………… you do, please don’t go too near the edge of the cliff.
+A. Wherever
+B. However
+C. Whatever
+D. Whenever
+ANSWER: C
+
+Question 15. Remember ……………… the door before going to bed.
+A. locking
+B. to lock
+C. locked
+D. not locking
+ANSWER: B
+
+<TITLE>PART 3: GAP FILING / DIRECTIONS: Read the following passage and choose the best option for each blank to complete the passage.
+
+<TEXT>
+A WELSH FESTIVAL
+Wales has a population of about three million. English is the main language and only twenty per cent speak both Welsh and English. Every year for one week (Q1) August there is a Welsh-speaking festival. It (Q2) place in a different town each year so everyone has the (Q3) for it to be near them. Local people (Q4) years making plans for when the festival will be in their town. Each festival is (Q5) by about 160,000 people. They (Q6) not only from nearby towns and villages (Q7) also from the rest of the British Isles and (Q8) from abroad. There are concerts, plays and competitions, and shops sell Welsh music, books, pictures and clothes as (Q9) as food and drink.
+There is also a place (Q10) Welsh learners can go to practise the language.
+</TEXT>
+
+Question  16.  
+A) on		
+B) by		
+C) in		
+D) at
+ANSWER: C
+
+Question  17.  
+A) takes	
+B) finds	
+C) has		
+D) comes
+ANSWER: A
+
+Question  18.  
+A) choice	
+B) chance	
+C) luck		
+D) ability
+ANSWER: B
+
+Question  19.  
+A) pass		
+B) put		
+C) spend	
+D) last
+ANSWER: C
+
+Question  20.  
+A) arrived	
+B) accompanied	
+C) joined	
+D) attended
+ANSWER: D
+
+Question  21.  
+A) bring	
+B) move	
+C) travel	
+D) tour
+ANSWER: C
+
+Question  22.  
+A) but		
+B) and		
+C) although	
+D) however
+ANSWER: A
+
+Question  23.  
+A) just		
+B) hardly	
+C) quite	
+D) even
+ANSWER: D
+
+Question  24.  
+A) long		
+B) far		
+C) good	
+D) well
+ANSWER: D
+
+Question  25.  
+A) when	
+B) where	
+C) which	
+D) that
+ANSWER: B
+
+<TITLE>PART 4: READING COMPREHENSION / DIRECTIONS: Read the passage carefully and choose the correct answer.
+
+<TEXT>
+If you want to take the whole family on holiday and keep everybody happy, then I have found just the place for you. I recently went with a group of friends to stay at the Greenwood Holiday Village, which is open from May until October. 
+Built in the centre of a forest, Greenwood is a great place to stay whatever the weather. Its main attraction for families is the indoor World of Water, whether young and old can have fun in different pools. Some of these, however, are for serious swimmers. 
+For sporty people, the Country Club offers tennis, squash and badminton. If your children are too young to join in these sports, there are activity clubs. Greenwood is a good place for families and it is traffic-free – you explore on foot or bike. Some people complained that this was inconvenient, but I was pleased to be out in the fresh air. For evening entertainment, there are shows and cinemas. 
+Accommodation is in a variety of apartments of different sizes. These have up to four bedrooms, a kitchen and a bathroom, as well as a dining area. Before going, I thought the apartments might not be big enough for all of us, but I was pleasantly surprised – it was not too crowded at all. 
+I definitely go back to Greenwood next year. Why don't you give it a try? Visit their website for further information now. 
+<TEXT>
+
+Question  26. What is the writer's main purpose in writing this text? 
+A. to give her opinion of the holiday village 
+B. to describe what her family did at the holiday village
+C. to give advice to a friend going to the holiday village 
+D. to complain about the holiday village.
+ANSWER: C
+
+Question  27. From this text, a reader can find out 
+A. the best way to get to the holiday village 
+B. the best time of year to visit the holiday village 
+C. what activities are available at the holiday village 
+D. how to reserve accommodation at the holiday village 
+ANSWER: C
+
+Question  28. What does the writer think about the holiday village? 
+A. The apartments there are not big enough. 
+B. It is not convenient because you cannot use your car.
+C. It can only be enjoyed in good weather. 
+D. There is something there for all ages. 
+ANSWER: D
+
+Question  29. What does the writer say about the apartments? 
+A. There is not much space between them. 
+B. Each one has its own bathroom. 
+C. They all have four bedrooms. 
+D. Not all of them have dining areas. 
+ANSWER: B
+
+Question  30. What will the writer do next year? 
+A. give Greenwood a try 
+B. go back to Greenwood 
+C. visit their website 
+D. go to another place 
+ANSWER: B

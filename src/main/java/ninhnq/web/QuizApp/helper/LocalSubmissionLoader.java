@@ -1,20 +1,19 @@
 package ninhnq.web.QuizApp.helper;
 
-import ninhnq.web.QuizApp.Entity.AnswerEntity;
-import ninhnq.web.QuizApp.Entity.QuiztestEntity;
+import ninhnq.web.QuizApp.Entity.Quiztest;
 import ninhnq.web.QuizApp.Entity.TestQuestion;
 
 import java.io.*;
 import java.util.Scanner;
 
 public class LocalSubmissionLoader {
-    public static void load(String baseDir, int uid, String tid, int attempt, QuiztestEntity quiz){
+    public static void load(String baseDir, String uid, String tid, int attempt, Quiztest quiz){
         String SUBMITION_DIRECTORY = "submission";
         String dirPath = baseDir + SUBMITION_DIRECTORY;
         String filename = tid + "$" + uid + "$" + attempt + ".txt";
         String filePath = dirPath + File.separator + filename;
         FileInputStream testFile = null;
-        System.out.println("Start to write to: " + filePath);
+        //System.out.println("Start to write to: " + filePath);
         try {
             testFile = new FileInputStream(filePath);
             InputStreamReader reader = new InputStreamReader(testFile, "UTF8");
@@ -25,6 +24,7 @@ public class LocalSubmissionLoader {
                 if (ques.getQuestion().getType()==-1) continue;
                 String choiced = in.nextLine().substring(7).trim();
                 ques.setChoiced(choiced);
+                //System.out.println(choiced);
             }
         } catch (FileNotFoundException | UnsupportedEncodingException e) {
             e.printStackTrace();

@@ -40,6 +40,8 @@ function setClearchoice(quesid,box,ans)
 }
 
 function submitQuiz() {
-    $$('Quiz-test-submit-form').submit();
+    let isExecuted = confirm("Bạn có chắc là muốn nộp bài hay không?");
+    if (isExecuted)
+        $$('Quiz-test-submit-form').submit();
 }
 

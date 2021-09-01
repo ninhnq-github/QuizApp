@@ -6,6 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix = "sql" uri = "http://java.sun.com/jsp/jstl/sql" %>
+<%@ taglib prefix = "x" uri = "http://java.sun.com/jsp/jstl/xml" %>
+<% if (session.getAttribute("authentication")!=null &&
+        ((String)session.getAttribute("authentication")).equals("valid"))
+    response.sendRedirect(pageContext.getServletContext().getContextPath()+"/Home");%>
 <html>
 <head>
     <title>ĐĂNG NHẬP</title>
@@ -31,9 +38,12 @@
         <div class="login w3_login">
             <h2 class="login-header w3_header">Đăng nhập</h2>
             <div class="w3l_grid">
-                <form class="login-container" action="#" method="post">
-                    <input type="email" placeholder="Tên đăng nhập" Name="Email" required="" >
+                <form class="login-container" action="${pageContext.request.contextPath}/Login" method="post">
+                    <input type="text" placeholder="Tên đăng nhập" Name="account" required="" >
                     <input type="password" placeholder="Mật khẩu" Name="password" required="">
+                    <c:if test="${requestScope.status!=null}">
+                        <span class="login-error-status" >${requestScope.status}</span>
+                    </c:if>
                     <input type="submit" value="Đăng nhập">
                 </form>
                 <div class="second-section w3_section">

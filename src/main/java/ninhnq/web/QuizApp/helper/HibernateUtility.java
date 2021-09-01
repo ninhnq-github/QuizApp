@@ -34,7 +34,7 @@ public class HibernateUtility {
                 configuration.addAnnotatedClass(AssignEntity.class);
                 configuration.addAnnotatedClass(BankEntity.class);
                 configuration.addAnnotatedClass(QuestionEntity.class);
-                configuration.addAnnotatedClass(QuiztestEntity.class);
+                configuration.addAnnotatedClass(Quiztest.class);
                 configuration.addAnnotatedClass(ResultEntity.class);
                 configuration.addAnnotatedClass(TestQuestion.class);
                 configuration.addAnnotatedClass(UserEntity.class);

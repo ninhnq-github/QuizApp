@@ -1,0 +1,239 @@
+<NAME> THI THỬ TIẾNG ANH - ĐỀ 04
+<TIME> 30
+<QUES> 30
+<OPEN> 03-09-2021 19:15:00
+<CLOSE> 03-09-2021 19:45:00 
+<TRY> 1
+<REVIEW> YES
+<SHOW> YES
+<LOGIN> YES
+
+<TITLE>PART 1: ERROR RECOGNITION / DIRECTIONS: Identify the one underlined word or phrase A, B, C, or D that should be corrected or rewritten.
+
+Question 1. Although Emily Dickinson publishes only three of her verses before she died, today there are more than one thousand of her poems printed in many important collection.
+A. publishes
+B. only
+C. are
+D. more than
+ANSWER: A
+
+Question 2. Dr Alvarez was displeased because the student had turned in an unacceptable report, so he made him to rewrite it.
+A. displeased
+B. had turned in an unacceptable
+C. so
+D. to rewrite
+ANSWER: D
+
+Question 3. Everyone who saw Star Wars said that it is one of the best science fiction movies that had ever been released.
+A. who
+B. is
+C. the best
+D. been
+ANSWER: B
+
+Question 4. Cartographers did not make an accurate map because the political situation in the area changes so rapidly that they were not able to draw the boundaries correctly.
+A. changes
+B. so
+C. to draw
+D. correctly
+ANSWER: A
+
+Question 5. Although there are approximately 120 intensive language institutes in the United States in 1970, there are more than three times as many now.
+A. are
+B. approximately
+C. in
+D. three times as many
+ANSWER: A
+
+<TITLE>PART 2: GRAMMAR AND VOCABULARY / DIRECTIONS: Choose the best option to complete each following sentence.
+
+Question 6. Peter won't be home for ……………… dinner this evening.
+A. this
+B. a
+C. no word is needed
+D. the
+ANSWER: C
+
+Question 7. She couldn't skate then ……………… her foot problem.
+A. because of
+B. because
+C. although
+D. as
+ANSWER: A
+
+Question 8. ……………… what he is saying?
+A. Do you understand
+B. Did you understand
+C. You understand
+D. You understood
+ANSWER: A
+
+Question 9. Tell me ……………… you are looking for and I will try to help you.
+A. that
+B. what
+C. who
+D. which
+ANSWER: B
+
+Question 10. A lot of people left school at 16 and they now ……………… leaving so early.
+A. sorry
+B. regret
+C. confuse
+D. worry
+ANSWER: B
+
+Question 11. The swamp contained ……………… thousands of fish.
+A. much
+B. one
+C. many
+D. few
+ANSWER: C
+
+Question 12. My boss spoke in a sarcastic voice. He spoke in a ……………… voice.
+A. critical
+B. laughing
+C. despicable
+D. mocking
+ANSWER: D
+
+Question 13. Something ……………… right in what he says.
+A. be
+B. would be
+C. being
+D. is
+ANSWER: D
+
+Question 14. When you want to go on a camping trip, you’d better bring ……………… to sleep in.
+A. tools
+B. food
+C. cooker
+D. a tent
+ANSWER: D
+
+Question 15. “You have been spending a great deal of money lately.” “You’re right. I need to ……………… on my expenses.”
+A. cut out
+B. cut up
+C. cut down
+D. cut away
+ANSWER: C
+
+<TITLE>PART 3: GAP FILING / DIRECTIONS: Read the following passage and choose the best option for each blank to complete the passage.
+
+<TEXT>
+TOM CRUISE
+Tom Cruise is one of the most successful actors in cinema history. However, life hasn't always been that easy for him. As a young boy, Tom was shy and had (Q16) in finding friends, although he really enjoyed (Q17) part in school plays.
+(Q18) he had finished High School; Tom went to New York to look for work. He found employment as a porter, and at the same time he (Q19) drama classes. In 1980, the film director Franco Zeffirelli (Q20) Tom his first part in a film. Ten years later, he had become (Q21) successful that he was one of the highest-paid actors in Hollywood, (Q22) millions of dollars for (Q23) film.
+Today, Tom (Q24) appears in films and is as (Q25) as ever with his thousands of fans from all around the world.
+<TEXT>
+
+Question  16. 
+A) worry	
+B) problem	
+C) fear		
+D) difficulty
+ANSWER: D
+
+Question  17. 
+A) making	
+B) holding	
+C) taking	
+D) finding
+ANSWER: C 
+
+Question  18. 
+A) While	
+B) During	
+C) After	
+D) Until
+ANSWER: C
+
+Question  19. 
+A) prepared	
+B) waited	
+C) attended	
+D) happened
+ANSWER: C
+
+Question  20. 
+A) suggested	
+B) offered	
+C) tried		
+D) advised
+ANSWER: B
+
+Question  21. 
+A) so		
+B) such		
+C) too		
+D) very
+ANSWER: A
+
+Question  22. 
+A) paying	
+B) earning	
+C) winning	
+D) reaching
+ANSWER: B
+
+Question  23. 
+A) another	
+B) all		
+C)  each	
+D) some
+ANSWER: C
+
+Question  24. 
+A) yet		
+B) ever		
+C) already	
+D) still
+ANSWER: D
+
+Question  25. 
+A) popular	
+B) favourite	
+C) preferred	
+D) approved
+ANSWER: A
+
+<TITLE>PART 4: READING COMPREHENSION / DIRECTIONS: Read the passage carefully and choose the correct answer.
+
+<TEXT>
+In most animals, dental decay is a rare problem. In man, and especially in the affluent West, the disease has reached epidemic proportions. 
+The cause of tooth decay in human beings is a bacterium that feeds on the sugar in our food. It digests the sugar more easily by converting it into an acid. The acid then dissolves the enamel, the outer coating of the teeth, and finally attacks the living nerve within. The result is the agonizing pain we know as toothache. 
+</TEXT>
+
+Question  26. According to the passage, how common is it for animals to suffer from tooth decay? 
+A. They never suffer from it. 
+B. They seldom suffer from it. 
+C. They suffer from it as commonly as people do. 
+D. They suffer from it more commonly than people do.
+ANSWER: B
+
+Question  27. What does the passage say about the problem of tooth decay in rich Western countries? 
+A. It is steadily decreasing each year. 
+B. It has remained unchanged for a long time. 
+C. It has been increasing slowly for years. 
+D. It is now virtually out of control. 
+ANSWER: D
+
+Question  28. Decay cannot begin until the bacterium produces............. 
+A. Food from sugar 				
+B. acid from sugar 
+C. Sugar from food 				
+D. sugar from acid 
+ANSWER: B
+
+Question  29. The term “tooth decay” refers to the.............. 
+A. digestion of the food 			
+B. production of the acid 
+C. conversion of the food 			
+D. dissolution of the enamel
+ANSWER: D
+
+Question  30. The last sentence means that toothache is a condition which is often................ 
+A. unbearable				
+B. a bit unpleasant 
+C. quite unexpected 			
+D. unpleasant but bearable 
+ANSWER: A

@@ -1,238 +1,40 @@
-<NAME> ÔN THI CÔNG CHỨC, TEST TIẾNG ANH - ĐỀ 01
-<TIME> 30
-<QUES> 30
-<OPEN> 31-08-2021 19:15:00
-<CLOSE> 31-08-2021 19:45:00 
+<NAME> BÀI KIỂM TRA THỬ NGHIỆM
+<TIME> 5
+<QUES> 5
+<OPEN> 31-08-2021 5:00:00
+<CLOSE> 31-08-2021 8:45:00
 <TRY> 1
 <REVIEW> YES
 <SHOW> YES
 <LOGIN> YES
 
-<TITLE>PART 1: ERROR RECOGNITION / DIRECTIONS: Identify the one underlined word or phrase A, B, C, or D that should be corrected or rewritten.
-
-Question 1. Those of us who move during the semester should have their addresses changed at the registrar's office.
-A. who
-B. during the semester
-C. their
-D. changed
+Câu 1. Hai mặt của vấn đề cơ bản của triết học là gì?
+A) Bản thể luận và phương pháp luận
+B) Thế giới quan và nhận thức luận
+C) Cả Bản thể luận và phương pháp luận và Thế giới quan và nhận thức luận đúng
+D) Cả Bản thể luận và phương pháp luận và Thế giới quan và nhận thức luận sai
+ANSWER: B
+Câu 2. Hãy cho biết trình tự xuất hiện của các hình thức thế giới quan trong lịch sử?
+A) Tôn giáo – Thần thoại – Triết học.
+B) Triết học – Thần thoại – Tôn giáo.
+C) Thần thoại – Tôn giáo – Triết học.
+D) Thần thoại – Tôn giáo – Triết học.
 ANSWER: C
-
-Question 2. Few airports in the United States is as modern as that of Atlanta.
-A. is
-B. as
-C. that
-D. of
-ANSWER: A
-
-Question 3. If one had considered the consequences carefully, you would not have agreed to sign a two-year lease.
-A. had
-B. carefully
-C. you
-D. two-year
-ANSWER: C
-
-Question 4. The price of coffee is low last month, but everyone knows that it is going to go up this month.
-A. is
-B. knows
-C. it
-D. going to
-ANSWER: A
-
-Question 5. Before he retired last April, Mr. Thompson is working as foreign student advisor for thirty years at Community College.
-A. retired
-B. last April
-C. is working
-D. for thirty years
-ANSWER: C
-
-<TITLE>PART 2: GRAMMAR AND VOCABULARY / DIRECTIONS: Choose the best option to complete each following sentence.
-
-Question 6. He doesn't want to let me ……………… he was going out.
-A. to know
-B. knew
-C. knows
-D. know
+Câu 3. Nguồn gốc của triết học là gì ?
+A) Nguồn gốc tự nhiên và nguồn gốc xã hội
+B) Nguồn gốc tự nhiên và nguồn gốc nhận thức
+C) Nguồn gốc nhận thức và nguồn gốc giai cấp
+D) Nguồn gốc nhận thức và nguồn gốc xã hội
 ANSWER: D
-
-Question 7. His grandmother was suddenly ……………… ill during the night and died the following afternoon.
-A. fallen
-B. taken
-C. got
-D. become
-ANSWER: B
-
-Question 8. The boy’s teachers ……………… him to improve his drawing.
-A. encouraged
-B. insisted
-C. made
-D. persisted
+Câu 4. Phát biểu: “Cái đẹp không ở trên đôi má hồng của người thiếu nữ mà ở trong đôi mắt của kẻ si tình” của Kant cho thấy ông thuộc trường phái triết học nào?
+A) Chủ nghĩa duy tâm chủ quan
+B) Chủ nghĩa duy tâm khách quan
+C) Chủ nghĩa duy vật chất phác
+D) Chủ nghĩa duy vật siêu hình
 ANSWER: A
-
-Question 9. His answer was so confused that the teacher could hardly make any ……………… of it at all.
-A. meaning
-B. interpretation
-C. intelligibility
-D. sense
-ANSWER: D
-
-Question 10. When I first visited Moscow, I couldn't get used ……………… the cold weather.
-A. with
-B. to
-C. for
-D. in
-ANSWER: B
-
-Question 11. Take two ……………… of this medicine after each meal.
-A. spoonfuls
-B. spoonful
-C. spoon's full
-D. sponfull's
-ANSWER: A
-
-Question 12. Mr Pike's passport ……………… last month, so he will have to get a new one.
-A. ended
-B. elapsed
-C. expired
-D. researched
+Câu 5. Phép biện chứng có các hình thức cơ bản nào?
+A) Tự phát, duy vật, duy tâm
+B) Duy tâm, tự phát, duy vật
+C) Tự phát, duy tâm, duy vật
+D) Duy vật, duy tâm, tự phát
 ANSWER: C
-
-Question 13. I often go to visit my friends in Hue, ……………… is 80 miles away.
-A. who
-B. which
-C. what
-D. where
-ANSWER: B
-
-Question 14. "Where ………………?" "In London."
-A. were you born
-B. are you born
-C. have you been born
-D. did you born
-ANSWER: A
-
-Question 15. Tom was a really intelligent boy when we were in high school. I still remember ……………… very intelligent and strange questions.
-A. his asking
-B. asking him
-C. him to ask
-D. his being asked
-ANSWER: A
-
-<TITLE>PART 3: GAP FILING / DIRECTIONS: Read the following passage and choose the best option for each blank to complete the passage. (Question 16 to 25)
-
-<TEXT>
-MERRYWOOD ELEMENTARY
-My mother decided it was time for me (Q16) to school. I was sent to Merrywood Elementary when I was six and I thought it was a complete waste of time. What was the (Q17) of school when I could learn all I needed at the docks? It turned (Q18) that Mum had other plans for my future (Q19) didn’t include joining Uncle Stan in the shipyard. Once Mum had dropped me off each morning, I would hang around in the yard until she was out of sight, and then slope off to the docks. I made sure I was always back at the school gates when she returned to pick me up in the afternoon. On the (Q20) back home, I had to be very inventive. I would (Q21) her everything I’d done at school that day. I was good at making up stories. (Q22). it wasn’t long before she discovered that was all they were: stories. Occasionally Mr. Haskins, the gatekeeper, decided he’d seen me leave the school too often and I’d be (Q23) to the headmaster. My form master, Mr.Holcombe, never let on if I didn’t show up for his class, but then he was a bit soft. One or two other boys from my school also (Q24) to hang around the docks but I kept my (Q25) from them. They were older and bigger and never missed a chance to beat me if I got in their way.
-</TEXT>
-
-Question 16. Fill the gap
-A) go		
-B) to go		
-C) went		
-D) going
-ANSWER: B
-
-Question 17. Fill the gap
-A) help		
-B) goal			
-C) aim			
-D) point
-ANSWER: D
-
-Question 18. Fill the gap
-A) off		
-B) out			
-C) in			
-D) over
-ANSWER: B
-
-Question 19. Fill the gap
-A) who		
-B) where		
-C) which		
-D) whose
-ANSWER: C
-
-Question 20. Fill the gap
-A) path		
-B) track		
-C) trial			
-D) way
-ANSWER: D
-
-Question 21. Fill the gap
-A) speak	
-B) tell			
-C) talk			
-D) moreover
-ANSWER: B
-
-Question 22. Fill the gap
-A) therefore	
-B) although		
-C) however		
-D) required
-ANSWER: C
-
-Question 23. Fill the gap
-A) reminded	
-B) remembered	
-C) reported		
-D) had
-ANSWER: C
-
-Question 24. Fill the gap
-A) kept		
-B) used		
-C) held			
-D) moreover
-ANSWER: A
-
-Question 25. Fill the gap
-A) destination	
-B) close		
-C) distance		
-D) destiny
-ANSWER: C
-
-<TITLE>PART 4: READING COMPREHENSION / DIRECTIONS: Read the passage carefully and choose the correct answer. (Question 26 to 30)
-
-<TEXT>
-If you ever go into a house in Japan, you must remember to take off your shoes. These would damage the fine straw mats which cover the floors. 
-The rooms in most Japanese houses are usually large. In the middle of the room, there may be a low table with small flat cushions around it. Many houses have no other furniture in their rooms. Perhaps you will see a bowl of flowers or a long silk painting on one of the walls. Visitors are given a small cup of green tea. 
-You may be surprised to see that there are no bedrooms. The Japanese unroll their beds and put them on the floor when they fell tired. Japanese people take a bath before their evening meals. Most houses have one large bath for the whole family. However, no one washes in the bath! They wash themselves before they go into the big bath. The water is very hot. But the Japanese are used to having hot baths. After the bath, they put on a loose robe and eat their evening meal. 
-</TEXT>
-
-Question  26. When you enter a Japanese house, you should …………………… 
-A. shake hands 				
-B. put on your shoes 
-C. take off your shoes 			
-D. wash your feet 
-ANSWER: C
-
-Question  27. Rooms in many Japanese houses have …………….. 
-A. a lot of furniture 				
-B. little furniture 
-C. no furniture 				
-D. a lot of beautiful furniture 
-ANSWER: B
-
-Question  28. When Japanese people feel tired ……………………. 
-A. they sleep in their bedrooms 		
-B. they sleep on the straw mats 
-C. they sleep on small flat cushions 		
-D. they unroll their beds on the floor 
-ANSWER: D
-
-Question  29. Japanese people wash themselves ……………… 
-A. in the big bath 				
-B. before going into the big bath
-C. after coming out of the big bath 		
-D. after their evening meal 
-ANSWER: B
-
-Question  30. Visitors are given a cup of green tea because ………………… 
-A. it is a sign of friendliness 		
-B. they are usually very thirsty 
-C. they like green tea 			
-D. it is very cheap
-ANSWER: A

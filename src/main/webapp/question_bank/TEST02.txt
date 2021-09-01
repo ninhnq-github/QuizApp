@@ -1,0 +1,429 @@
+<NAME> THI THỬ KIẾN THỨC CHUNG - ĐỀ 01
+<TIME> 60
+<QUES> 60
+<OPEN> 31-08-2021 5:00:00
+<CLOSE> 31-08-2021 8:00:00
+<TRY> 1
+<REVIEW> YES
+<SHOW> YES
+<LOGIN> YES
+
+Câu 1: Theo Hiến pháp năm 2013, ai có thẩm quyền đình chỉ việc thi hành nghị quyết của Hội đồng nhân dân cấp tỉnh trái với Hiến pháp, luật và văn bản của cơ quan nhà nước cấp trên?
+A. Bộ trưởng Bộ Nội vụ
+B. Bộ trưởng Bộ Tư pháp
+C. Tổng Thanh tra Chính phủ
+D. Thủ tướng Chính phủ
+ANSWER: D
+
+Câu 2: Hiến pháp năm 2013 quy định cơ quan thường trực của Quốc hội là cơ quan nào?
+A. Ủy ban Thường vụ của Quốc hội
+B. Ủy ban Pháp luật của Quốc hôi
+C. Ủy ban Tư pháp của Quốc hội
+D. Văn phòng Quốc hội
+ANSWER: A
+
+Câu 3: Theo Hiến pháp năm 2013, cơ cấu Ủy ban Thường vụ Quốc hội bao gồm các thành viên nào?
+A. Chủ tịch Quốc hội, các Phó Chủ tịch Quốc hội và các Ủy viên
+B. Chủ tịch Quốc hội, Tổng thư ký Quốc hội và các Ủy viên
+C. Chủ tịch Quốc hội, các Phó Chủ tịch Quốc hội
+D. Chủ tịch Quốc hội và các Ủy viên
+ANSWER: A
+
+Câu 4: Nhiệm vụ nào dưới đây tác động đến hiệu quả hoạt động của Quốc hội?
+a. Kiện toàn cơ quan chuyên môn của UBND tỉnh.
+b. Xây dựng Bộ quản lý đa ngành, đa lĩnh vực trên phạm vi cả nước.
+c.Tổ chức lại cơ quan điều tra và cơ quan, thi hành án theo nguyên tắc tinh gọn
+d. Thực hiện tốt chức năng quyết định các vấn đề quan trọng cùa đất nước.
+ANSWER: D
+
+Câu 5. Hoạt động nào sau đây thuộc chức năng của Quốc hội?
+a. Giám sát tối cao đối với toàn bộ hoạt động của Nhà nước.
+b. Tổ chức thực hiện các chủ truơng, chính sách của Đảng, pháp luật của Nhà nước.
+c. Thực hiện chính sách đối nội và đối ngoại của đất nước.
+d. Tổ chức các kỳ họp Quốc hội.
+ANSWER: A
+
+Câu 6: Thủ tướng Chính phủ do:
+A. Quốc hội bầu trong số các đại biểu Quốc hội theo đề nghị của Chủ tịch Quốc hội.
+B. Quốc hội bầu trong số các đại biểu Quốc hội theo đề nghị của Chủ tịch nước
+C. Quốc hội bầu trong số các đại biểu Quốc hội theo đề nghị của thường vụ Quốc hội.
+D. Chủ tịch nước quyết định.
+ANSWER: A
+
+Câu 7: Trong quản lý và phát triển kinh tế, Chính phủ có nhiệm vụ?
+A. Quyết định chính sách cụ thể nhằm phát triển ngành công nghiệp, tạo việc làm, cải thiện điều kiện làm việc.
+B. Nâng cao năng suất lao động; bảo vệ quyền, lợi ích hợp pháp của người lao động, người sử dụng lao động, tạo điều kiện xây dựng quan hệ lao động hài hòa và ổn định.
+C. Xây dựng và tổ chức thực hiện thể chế kinh tế thị  trường định hướng xã hội chủ nghĩa, tạo môi trường bình đẳng, cạnh tranh và hợp tác giữa các thành phần kinh tế, tạo lập, phát triển đầy đủ, đồng bộ các yếu tố thị trường và bảo đảm vận hành có hiệu quả các loại thị trường
+D. Quản lý, sử dụng có hiệu quả tài nguyên gắn với bảo tồn thiên nhiên, đa dạng sinh học.
+ANSWER: C
+
+Câu 8: Địa vị pháp lý hiện hành của Chính phủ nước CHXHCN Việt Nam là:
+A. Cơ quan hành chính thay mặt nước CHXHCN Việt Nam trong đối ngoại
+B. Cơ quan chấp hành của Quốc hội và cơ quan hành chính nhà nước cao nhất của cơ quan quyền lực Nhà nước cao nhất
+C. Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội.
+D. Cơ quan hành chính nhà nước cao nhất của cơ quan quyền lực cao nhất
+ANSWER: C
+
+Câu 9. Vụ thuộc Bộ có chức năng gì?
+A. Tham mưu về quản lý nhà nước hoặc công tác quản lý nội bộ của Bộ
+B. Tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ
+C. Tham mưu về quản lý nhà nước hoặc công tác quản lý nội bộ của Bộ và tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ
+D. Tham mưu về công tác quản lý nội bộ của Bộ
+ANSWER: D
+
+Câu 10. Cục thuộc Bộ có chức năng gì?
+A. Tham mưu về quản lý nhà nước
+B. Tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ
+C. Tham mưu về quản lý nhà nước và tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ
+D. Tham mưu về quản lý nhà nước và tổ chức thực thi pháp luật
+ANSWER: B
+
+Câu 11. Đơn vị nào sau đây không có tài khoản và con dấu riêng?
+A. Văn phòng thuộc Bộ
+B, Thanh tra Bộ
+C. Vụ thuộc Bộ
+D. Cục thuộc Bộ
+ANSWER: C
+
+Câu 12. Những tổ chức nào sau đây không có tư cách pháp nhân theo quy định?
+A. Tổng cục thuộc Bộ
+B. Cục thuộc Bộ
+C. Vụ thuộc Bộ
+D. Tổ chức sự nghiệp thuộc Bộ
+ANSWER: C
+
+Câu 13. Hiện nay, Chính phủ Việt Nam có bao nhiêu Bộ và cơ quan ngang Bộ?
+A. 18
+B. 20
+C. 22
+D. 24
+ANSWER: C
+
+Câu 14: Xác định phương án đúng “Lãnh đạo, chỉ đạo công tác tuyên truyền, phổ biến, giáo dục Hiến pháp và pháp luật; bảo đảm điều kiện về cơ sở vật chất, nhân lực và các nguồn lực khác để thi hành Hiến pháp và pháp luật; thống nhất quản lý công tác hành chính tư pháp, bổ trợ tư pháp, bồi thường nhà nước, thi hành án” là nhiệm vụ và quyền hạn của?
+A. Thủ tướng Chính phủ
+B. Bộ trưởng, Thủ trưởng cơ quan ngang bộ
+C. Trách nhiệm của Thủ tướng Chính phủ
+D. Chính phủ
+ANSWER: D
+
+Câu 15: Theo Luật Tổ chức chính quyền địa phương sửa đổi 2019, quyết định triệu tập kỳ họp Hội đồng nhân dân nào được thông báo trên các phương tiện thông tin đại chúng tại địa phương chậm nhất là 03 ngày trước ngày khai mạc?
+A. Kỳ họp thường lệ
+B. Kỳ hợp thường kỳ
+C. Kỳ họp chuyên đề hoặc họp để giải quyết công việc phát sinh đột xuất
+D. Kỳ hợp bất thường
+ANSWER: C
+
+Câu 16: Theo Luật Tổ chức chính quyền địa phương sửa đổi 2019, Số lượng Ủy viên của các Ban của Hội đồng nhân dân tỉnh do Cơ quan nào quyết định?
+A. Hội đồng nhân dân tỉnh quyết định
+B. Uỷ ban nhân dân tỉnh quyết định
+C. Uỷ ban thường vụ Quốc hội quyết định
+D. Không có phương án nào đúng
+ANSWER: A
+
+Câu 17: Theo Luật Tổ chức chính quyền địa phương sửa đổi 2019, Ban của Hội đồng nhân dân tỉnh gồm?
+A. Trưởng ban
+B. Phó ban
+C. Các uỷ viên
+D. Tất cả các phương án đều đúng
+ANSWER: D
+
+Câu 18: Luật Tổ chức chính quyền địa phương sửa đổi 2019, Cơ quan nào quy định tiêu chuẩn, điều kiện thành lập Ban dân tộc.
+A. Quốc hội
+B. Ủy ban thường vụ Quốc hội
+C. Chính phủ
+D. Văn phòng Chủ tịch nước
+ANSWER: B
+
+Câu 19: Theo Luật Tổ chức chính quyền địa phương sửa đổi 2019, Hội đồng nhân dân tỉnh thành lập nhiều nhất bao nhiêu ban?
+A. 6 ban
+B. 3 ban
+C. 4 ban
+D. 5 ban
+ANSWER: C
+
+Câu 20: Theo Luật Tổ chức chính quyền địa phương sửa đổi 2019, nơi nào Hội đồng nhân dân tỉnh được thành lập 4 ban?
+A. Nơi có thành phố trực thuộc trung ương
+B. Nơi có dân số trên 5 triệu người
+C. Nơi có nhiều đồng bào dân tộc thiểu số
+D. Nơi có nhiều tôn giáo
+ANSWER: C
+
+Câu 21: Vai trò của chính sách xã hội đối với sự phát triển đất nước được thể hiện ở khía cạnh:
+A. Xác định thẩm quyền của cán bộ, công chức
+B. Là cầu nối giữa tăng trưởng kinh tế và tiến bộ xã hội, là công cụ hữu hiệu để phát triển theo định hướng XHCN ở nước ta
+C. Phát triển nguồn lực trong sản xuất – kinh doanh
+D. Làm cơ sở để hoạch định chính sách an ninh, quốc phòng.
+ANSWER: B
+
+Câu 22: Giải pháp nào dưới đây không phải là giải pháp về công bằng xã hội trong chính sách xã hội:
+a. Xây dựng và phát triển một chế độ dân chủ xã hội chủ nghĩa thực sự, nhân dân tham gia quyết định những vấn đề trọng đại của đất nước
+b. Xóa bỏ độc quyền, lũng đoạn trong hoạt động kinh tế
+c. Huy động các nguồn lực trong nhân dân, xã hội hóa nhiệm vụ đền ơn đáp nghĩa
+d. Điều chỉnh, điều tiết quan hệ thị trường
+ANSWER: D
+
+Câu 23: Giải pháp nào dưới đây không phải là giải pháp về công bằng xã hội trong chính sách xã hội:
+a. Xây dựng một xã hội dân sự, nhà nước pháp quyền với chế độ dân chủ, kinh tế - văn hóa phát triển. Kiên quyết xóa bỏ độc quyền, đặc quyền, đặc lợi
+b. Hợp tác quốc tế trong lĩnh vực chính sách xã hội
+c. Xây dựng và phát triển một chế độ dân chủ xã hội chủ nghĩa thực sự, nhân dân tham gia những vấn đề trọng đại của đất nước
+d. Xóa bỏ sự độc quyền lũng đoạn trong hoạt động kinh tế, bảo đảm mọi người bình đẳng về kinh doanh và làm nghĩa vụ đối với nhà nước và xã hội
+ANSWER: A
+
+Câu 24: Đặc tính nào dưới đây không phải là đặc tính của nền hành chính nhà nước
+a. Bảo vệ vững chắc tổ quốc xã hội chủ nghĩa
+b. Tính pháp quyền
+c. Tính liên tục tương đối ổn định và thích ứng
+d. Tính chuyên môn hóa và nghề nghiệp cao
+ANSWER: A
+
+Câu 25: Quyết định quản lý hành chính nhà nước bao gồm:
+a. Luật dân sự, luật đất đai
+b. Bản án của Hội đồng xét xử
+c. Quyết định thành lập đội thanh niên xung kích
+d. Chỉ thị, Quyết định của Chủ tịch UBND
+ANSWER: D
+
+Câu 26: Theo Đề án đơn giản hóa chế độ báo cáo trong hoạt động của các cơ quan hành chính nhà nước được phê duyệt theo Quyết định số 559/QĐ-TTg ngày 24/4/2017 cùa Thủ tướng Chính phủ, bước tiếp theo sau khi hệ thống hóa toàn bộ các báo cáo, chế độ báo cáo theo ngành, lĩnh vực đang thực hiện hoặc yêu cầu thực hiện là gì?
+A. Bộ, ngành, UBND tỉnh, thành phố tiến hành rà soát, đơn giản hóa chế độ báo cáo
+B. Bộ, ngành, ƯBND tỉnh, thành phố trực thuộc Trung ưong xây dụng văn bản hướng dẫn hoặc quỵ định chế độ báo cáo thuộc phạm vi thẩm quyền
+C. Cập nhật kết quả hệ thống hóa lên Hệ thống thông tín báo cáo Quốc gia
+D. Quốc hội ban hành Luật quy định về chế độ báo cáo trong các cơ quan hành chính nhà nước
+ANSWER: A
+
+Câu 27: Quyết định quản lý hành chính nhà nước có đặc điểm nào dưới đây:
+A. Quyết định quản lý hành chính nhà nước được ban hành để sửa đổi những quy phạm pháp luật hành chính hiện hành
+B. Quyết định quản lý hành chính nhà nước mang tính dưới Luật, nó được ban hành trên cơ sở và để thực hiện Luật, các văn bản của cơ quan nhà nước cấp trên
+C. Quyết định quản lý hành chính Nhà nước được ban hành để thay đổi phạm vi hiệu lực của quy phạm pháp luật hành chính về thời gian, không gian và đối tượng thi hành
+D. Quyết định quản lý hành chính nhà nước được ban hành để cụ thể hóa các quy phạm pháp luật trong các luật do cơ quan quyền lực nhà nước tối cao ban hành, hoặc các cơ quan nhà nước cấp trên ban hành
+ANSWER: B
+
+Câu 28: Quyết định quản lý hành chính nhà nước có đặc điểm nào dưới đây?
+A. Quyết định quản lý hành chính nhà nước được ban hành để sửa đổi những quy phạm pháp luật hành chính hiện hành
+B. Quyết định quản lý hành chính Nhà nước mang tính dưới Luật, nó được ban hành trên cơ sở và để thực hiện Luật, các văn bản của cơ quan Nhà nước cấp trên
+C. Quyết định quản lý hành chính nhà nước được ban hành để thay đổi phạm vi hiệu lực của quy phạm pháp luật hành chính về thời gian, không gian và đối tượng thi hành
+D. Quyết định quản lý hành chính nhà nước được ban hành để cụ thể hoá các quy phạm pháp luật trong các luật do cơ quan quyền lực nhà nước tối cao ban hành, hoặc các cơ quan nhà nước cấp trên ban hành
+ANSWER: B
+
+Câu 29: Theo luật cán bộ công chức quy định hiện hành, đối tượng nào sau đây là công chức loại B?
+a. Cán sự hoặc tương đương
+b. Chuyên viên hoặc tương đương
+c. Chuyên viên chính hoặc tương đương
+d. Chuyên viên cao cấp hoặc tương đương
+ANSWER: C
+
+Câu 30: Theo Luật Cán bộ, Công chức quy định, có bao nhiêu hình thức nâng ngạch công chức?
+A. 4 hình thức
+B. 1 hình thức
+C. 3 hình thức
+D. 2 hình thức
+ANSWER: D
+
+Câu 31: Trường hợp cá nhân đã bị khởi tố, truy tố hoặc đã có quyết định đưa ra xét xử theo thủ tục tố tụng hình sự nhưng sau đó có quyết định đình chỉ điều tra hoặc đình chỉ vụ án mà hành vi vi phạm có dấu hiệu vi phạm kỷ luật thì bị xem xét xử lý kỷ luật. Thời gian điều tra, truy tố, xét xử theo thủ tục tố tụng hình sự không được tính vào thời hạn xử lý kỷ luật. Trong thời hạn bao nhiêu ngày làm việc, kể từ ngày ra quyết định đình chỉ điều tra, đình chỉ vụ án, người ra quyết định phải gửi quyết định và tài liệu có liên quan cho cơ quan, tổ chức, đơn vị có thẩm quyền xử lý kỷ luật?
+A. 5 ngày
+B. 6 ngày
+C. 3 ngày
+D. 4 ngày
+ANSWER: C
+
+Câu 32: Theo Luật Cán bộ, công chức; nguyên tắc "Bảo đảm thứ bậc hành chính và sự phối hợp chặt chẽ" là một trong các nguyên tắc gì?
+A. Trong tuyển dụng công chức
+B. Trong xử lý kỷ luật cán bộ, công chức
+C. Trong thi hành công vụ
+D. Trong đánh giá cán bộ, công chức
+ANSWER: C
+
+Câu 33: Theo Luật Cán bộ, công chức; Bãi nhiệm là gì?
+A. Việc cán bộ không được tiếp tục giữ chức vụ, chức danh khi chưa hết nhiêm kỳ
+B. Việc công chức không được tiếp tục giữ chức vụ, chức danh khi chưa hểt nhiệm kỳ
+C. Việc công chức giữ chức vụ lãnh đạo, quản lý không được tiếp tục giữ chức vụ, chức danh khi chưa hết nhiệm kỳ
+D. Việc viên chức giữ chức vụ lãnh đạo, quản lý không được tiếp tục giữ chức vụ, chức danh khi chưa hết nhiệm kỳ
+ANSWER: A
+
+Câu 34: Theo Luật Cán bộ, công chức; thời hạn biệt phái công chức tối đa là bao nhiêu năm (trừ một số ngành, lĩnh vực do Chính phủ quy định)?
+A. không quá 03 năm
+B. không quá 01 năm
+C. không quá 02 năm
+D. không quá 05 năm
+ANSWER: A
+
+Câu 35: Theo Luật Cán bộ, công chức; yêu cầu đối với công chức được điều động là gì?
+A. Phải am hiểu kiến thức chuyên môn, nghiệp của vị trí việc làm mớ
+B. Phải đạt yêu cầu về chuyên môn, nghiệp vụ phù hợp với vị trí việc làm mới
+C. Phải có kết quả đánh giá công chức hàng năm từ hoàn thành tốt nhiệm vụ
+D. Phải có khả năng, năng lực đáp úng yêu cầu vị trí việc làm mới
+ANSWER: B
+
+Câu 36: Theo Luật Cán bộ, công chức; công chức đã được đào tạo, bồi dưỡng nếu tự ý bỏ việc, xin thôi việc thì phải có trách nhiệm đền bù các khoản chi phí nào?
+A. Phải đền bù tiền tàu, xe, tiền công tác phí trong quá trình đào tạo, bồi dưỡng
+B. Phải đền bù toàn bộ chi phí đào tạo, bồi dưỡng và tiền lương, phụ cấp
+C. Phải đền bù chi phí đào tạo, bồi dưõng theo quy định của pháp luật
+D. Phải đền bù tiền lương, phụ cấp trong thời gian tham gia đào tạo, bồi dưỡng
+ANSWER: C
+
+Câu 37: Theo Luật Cán bộ, công chức năm 2008; quyền lọi công chức tham gia đào tạo, bồi dưỡng là gì?
+A. Hưởng nguyên lương và phụ cấp
+B. Hưởng 40% lương và phụ cấp. không được lương và phụ cấp
+C. Hưởng 85% lương và phụ cấp
+D. Hưởng 50% lương và phụ cấp
+ANSWER: A
+
+Câu 38: Theo Luật Cán bộ, công chức năm 2008, sửa đổi, bổ sung 2019, công chức có đủ tiêu chuẩn, điều kiện để đảm nhận vị trí việc làm tương ứng với ngạch cao hơn trong cùng ngành chuyên môn thì được quyền gì?
+A. Được đăng ký dự thi nâng ngạch
+B. Được đăng ký dự thi thăng hạng
+C. Được đăng ký chuyển ngạch
+D. Được đăng ký chuyển loại chức danh nghề nghiệp.
+ANSWER: A
+
+Câu 39: Theo Luật Cán bộ, công chức năm 2008, sửa đổi, bổ sung 2019, căn cứ vào ngạch được bổ nhiệm, nhũng người được bổ nhiệm vào ngạch chuyên viên chính hoặc tương đương thuộc công chức loại gì?
+A. Loại B
+B. Loại A
+C. Loại C
+D. Loại D
+ANSWER: A
+
+Câu 40: Theo Luật Cán bộ, công chức năm 2008, sửa đổi, bổ sung 2019, căn cứ vào ngạch được bổ nhiệm, những người được bổ nhiệm vào ngạch chuyên viên cao cấp hoặc tương đương thuộc công chức loại gì?
+A. Loại A
+B. Loại B
+C. Loại C
+D. Loại D
+ANSWER: A
+
+Câu 41: Theo Luật Cán bộ, công chức năm 2008, sửa đổi, bổ sung 2019, cơ quan, tổ chức, đơn vị quản lý cán bộ ra quyết định nghỉ hưu trước mấy tháng, tính đến ngày cán bộ nghỉ hưu?
+A. 04 tháng
+B. 03 tháng
+C. 01 tháng
+D. 06 tháng
+ANSWER: B
+
+Câu 42: Theo Luật Cán bộ, công chức năm 2008; căn cứ vào kết quả đánh giá, cán bộ được phân loại đánh giá thành mấy loại?
+A. 04 loại
+B. 05 loại
+C. 03 loại
+D. 02 loại
+ANSWER: A
+
+Câu 43: Theo Luật Cán bộ, công chức năm 2008, sửa đổi, bổ sung 2019, cán bộ 02 năm liên tiếp không hoàn thành nhiệm vụ thì cơ quan, tổ chức có thẩm quyền giải quyết như thế nào?
+A. Buộc thôi việc
+B. Cách chức
+C. Miễn nhiệm, cho thôi làm nhiệm vụ
+D. Điều động sang cơ quan khác
+ANSWER: C
+
+Câu 44: Văn bản pháp quy nào dưới đây, người có thẩm quyền không được ký thay mặt thủ trưởng cơ quan:
+a. Nghị quyết
+b. Nghị định
+c. Chỉ thị
+d. Quy chế
+ANSWER: C
+
+Câu 45: Nguyên tắc nào dưới đây không phải là nguyên tắc áp dụng văn bản quản lý hành chính nhà nước:
+a. Văn bản được áp dụng từ thời điểm có hiệu lực
+b. Hiệu lực của văn bản quy phạm pháp luật được quy định trong văn bản nhưng không sớm hơn 45 ngày, kể từ ngày công bố hoặc ký ban hành
+c. Trong trường hợp các văn bản quy phạm pháp luật có quy định khác nhau về một vấn đề thì áp dụng văn bản có hiệu lực pháp lý cao hơn
+d. Trong trường hợp các văn bản quy phạm pháp luật do một cơ quan hành chính ban hành mà có quy định khác nhau về một vấn đề thì áp dụng văn bản được ban hành sau
+ANSWER: A
+
+Câu 46: Đặc điểm của văn bản quy phạm pháp luật:
+a. Điều chỉnh các quan hệ xã hội
+b. Dễ thay đổi, áp dụng linh hoạt
+c. Chỉ được áp dụng trong hệ thống hành pháp
+d. Được áp dụng nhiều lần và có hiệu lực lâu dài
+ANSWER: D
+
+Câu 47: Theo luật ban hành văn bản quy phạm pháp luật, Bộ trưởng Bộ Tài chính có thẩm quyền ban hành loại văn bản quy phạm pháp luật nào:
+a. Thông tư
+b. Chỉ thị
+c. Quyết định
+d. Thông tư và Quyết định
+ANSWER: A
+
+Câu 48: Đặc điểm về hình thức của văn bản quy phạm pháp luật là:
+a. Ban hành theo hình thức văn bản quy phạm pháp luật và theo trình tự thủ tục được luật định
+b. Ban hành dưới nhiều hình thức khác nhau
+c. Được ban hành theo hình thức văn bản hoặc thư điện tử
+d. Được ban hành theo sáng kiến của cá nhân, tổ chức dưới hình thức văn bản pháp luật.
+ANSWER: A
+
+Câu 49: Đặc điểm cơ bản của văn bản quản lý chuyên môn là:
+a. Để quy định về hoạt động chuyên môn nhất định
+b. Chỉ được áp dụng trong cơ quan hành chính nhà nước thẩm quyền chung
+c. Có liên quan trực tiếp đến kinh tế
+d. Dễ áp dụng
+ANSWER: A
+
+Câu 50: Theo luật ban hành văn bản quy phạm pháp luật, Bộ trưởng và thủ trưởng cơ quan ngang Bộ có thẩm quyền ban hành văn bản quy phạm pháp luật nào sau:
+a. Nghị quyết và quyết định
+b. Thông tư và quyết định
+c. Thông tư và chỉ thị
+d. Thông tư
+ANSWER: D
+
+Câu 51: Theo luật ban hành văn bản quy phạm pháp luật, loại văn bản nào dưới đây là văn bản quy phạm pháp luật:
+a. Chỉ thị của Thủ tướng chính phủ
+b. Thông tư của Bộ trưởng, Thủ trưởng cơ quan ngang Bộ
+c. Công văn của Chánh án Tòa án nhân dân tối cao
+d. Chỉ thị của Bộ trưởng
+ANSWER: B
+
+Câu 52: Xây dựng kế hoạch mua sắm, sửa trang thiết bị làm việc tại Kho bạc Nhà nước trên địa bàn trình cấp có thẩm quyền phê duyệt là nhiệm vụ của
+A. Văn phòng
+B. Phòng Tài vụ quản trị
+C. Phòng Kiểm soát chi
+D. Phòng Thanh tra - Kiểm tra
+ANSWER: B
+
+Câu 53. Quyền hạn của các phòng và Văn phòng thuộc KBNN cấp tỉnh
+A. Ký thừa lệnh các văn bản hướng dẫn, giải thích, tổ chức thực hiện các nội dung quản lý thuộc lĩnh vực chuyên môn được giao theo phân công, phân cấp của Giám đốc Kho bạc Nhà nước cấp tỉnh
+B. Yêu cầu các đơn vị có liên quan báo cáo tình hình, cung cấp số liệu, tài liệu phục vụ cho công tác nghiệp vụ chuyên môn được giao
+C. Tổ chức thực hiện các nhiệm vụ được giao
+D. Tất cả đều đúng
+ANSWER: B
+
+Câu 54: Phòng và Văn phòng thuộc KBNN cấp tỉnh làm việc theo chế độ
+A. Thủ trưởng
+B. Hội nghị
+C. Tập trung
+D. Chuyên viên
+ANSWER: D
+
+Câu 55: Chủ thể nào quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của kho bạc nhà nước ở tỉnh, thành phố trực thuộc trung ương
+A. Tổng Giám đốc Kho bạc Nhà nước
+B. Thủ tướng
+C. Bộ trưởng Bộ Tài chính
+D. Bộ trưởng Bộ Tài chính ủy quyền cho Tổng Giám đốc Kho bạc Nhà nước
+ANSWER: A
+
+Câu 56: Phòng Kiểm soát chi thực hiện chức năng tham mưu, giúp Giám đốc KBNN cấp tỉnh tổ chức thực hiện công tác:
+A. các khoản chi ngân sách nhà nước
+B. chi thường xuyên, chi đầu tư
+C. chương trình mục tiêu quốc gia thuộc nguồn vốn ngân sách
+D. Tất cả đều đúng nhà nước
+ANSWER: D
+
+Câu 57: Thực hiện công tác báo cáo quyết toán vốn đầu tư hàng năm, công tác thống kê, tổng hợp, báo cáo định kỳ và đột xuất về đầu tư XDCB nội bộ tại KBNN cấp tỉnh là nhiệm vụ của
+A. Văn phòng
+B. Phòng Tài vụ- quản trị
+C.Phòng Kiểm soát chi
+D. Phòng Thanh tra - Kiểm tra
+ANSWER: B
+
+Câu 58: Văn phòng thực hiện chức năng tham mưu, giúp Giám đốc KBNN cấp tỉnh tổ chức thực hiện công tác:
+A. Cải cách hành chính
+B. Công tác văn thư, lưu trữ
+C. Công tác bảo vệ chính trị nội bộ
+D. Tất cả đều đúng
+ANSWER: D
+
+Câu 59: Phòng Tài vụ - Quản trị thực hiện chức năng tham mưu, giúp Giám đốc KBNN cấp tỉnh tổ chức thực hiện công tác
+A. Quản lý dữ liệu tại KBNN cấp tỉnh,
+B. Khoa học công nghệ tại KBNN cấp tỉnh.
+C. Ứng dụng công nghệ thông tin tại KBNN cấp tỉnh,
+D. Áp dụng tin học tại KBNN cấp tỉnh,
+ANSWER: C
+
+Câu 60: Trong cải cách Tài chính công theo Nghị quyết 30C của Chính phủ có nội dung nào sau đây:
+a. Điều hành tài chính các tổ chức chính trị xã hội
+b. Tổ chức in ấn phát hành tiền mặt
+c. Ban hành chính sách cải cách tài chính các đơn vị sản xuất kinh doanh
+d. Đổi mới cơ bản cơ chế tài chính đối với khu vực dịch vụ công
+ANSWER: D

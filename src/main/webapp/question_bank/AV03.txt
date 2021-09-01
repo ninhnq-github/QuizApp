@@ -1,0 +1,241 @@
+<NAME> THI THỬ TIẾNG ANH - ĐỀ 03
+<TIME> 30
+<QUES> 30
+<OPEN> 02-09-2021 19:15:00
+<CLOSE> 02-09-2021 19:45:00 
+<TRY> 1
+<REVIEW> YES
+<SHOW> YES
+<LOGIN> YES
+
+<TITLE>PART 1: ERROR RECOGNITION / DIRECTIONS: Identify the one underlined word or phrase A, B, C, or D that should be corrected or rewritten.
+
+Question 1. On October 19, 1781, Cornwallis surrenders his army to General Washington, a gesture that signalled the end of the Revolutionary War.
+A. On
+B. surrenders
+C. to
+D. that
+ANSWER: B
+
+Question 2. The secretary thought that she will have to wait until tomorrow to send the letters because the mail had already gone, but her boss suggested that she take them to the post office instead.
+A. will
+B. wait
+C. gone
+D. take
+ANSWER: A
+
+Question 3. The popularity of soccer in the United States were increased significantly by the playing of the World Cup in cities throughout the country in 1994.
+A. were increased
+B. significantly
+C. the playing
+D. in 1994
+ANSWER: A
+
+Question 4. This year designers are showing very bright colours and styles that were worn closer to the body than those shown last year.
+A. very
+B. were
+C. than
+D. those
+ANSWER: B
+
+Question 5. She was among the few who want to quit smoking instead of cutting down.
+A. the few
+B. who
+C. want
+D. smoking
+ANSWER: C
+
+<TITLE>PART 2: GRAMMAR AND VOCABULARY / DIRECTIONS: Choose the best option to complete each following sentence.
+
+Question 6. Michael and his friend were badly injured in the last match, so ……………… can play today.
+A. both of them
+B. either one of them
+C. neither of them
+D. not any of them
+ANSWER: C
+
+Question 7. “Did you enjoy the film?” “Yes, but I don’t think the actors performed as well as they ………………”
+A. do
+B. have done
+C. once did
+D. did
+ANSWER: C
+
+Question 8. This man was defeated in the elections. He was ………………
+A. conquered
+B. won
+C. beaten
+D. destroyed
+ANSWER: C
+
+Question 9. What ……………… to see her at the stadium!
+A. the surprise
+B. surprise
+C. a surprise
+D. surprising
+ANSWER: C
+
+Question 10. “Can we begin the test?” “We can’t unless the teacher ……………… so.”
+A. will say
+B. is saying
+C. shall say
+D. says
+ANSWER: D
+
+Question 11. I wish I ……………… a famous singer.
+A. am
+B. be
+C. will be
+D. were
+ANSWER: D
+
+Question 12. I didn’t recognize the man until he turned round to ……………… me.
+A. look
+B. face
+C. stare
+D. head
+ANSWER: B
+
+Question 13. Don't drink too much beer, ……………… will make us fat.
+A. which
+B. when
+C. who
+D. whom
+ANSWER: A
+
+Question 14. Commodities were sent from various parts of the world. They came from ……………… parts.
+A. difference
+B. same
+C. different
+D. differently
+ANSWER: C
+
+Question 15. Nancy talks as if she ……………… everything.
+A. knows
+B. had known
+C. knew
+D. not know
+ANSWER: C
+
+<TITLE>PART 3: GAP FILING / DIRECTIONS: Read the following passage and choose the best option for each blank to complete the passage.
+
+<TEXT>
+ZOOS
+People began to keep animals in zoos (Q16) 3,000 years ago when the rulers of China opened an enormous zoo called the Gardens of Intelligence. In many of the early zoos, animals (Q17) taught to perform for the visitors. This no longer (Q18) and it is accepted that the purpose of zoos is for people to see animals behaving naturally.
+Today, most cities have a zoo or wildlife park. However, not (Q19) approves of zoos. People who think that zoos are a good idea say they (Q20) us with the opportunity to (Q21) about the natural world and be close to wild animals. Both of (Q22) would not be possible (Q23) zoos. On the other hand, some people disapprove of zoos because they (Q24) it is wrong to put animals in cages, and argue that in zoos which are not (Q25) properly, animals live in dirty conditions and eat unsuitable food.
+</TEXT>
+
+Question 16.	
+A) above	
+B) over		
+C) more	
+D) beyond
+ANSWER: B
+
+Question 17.	 
+A)  are		
+B) have	
+C) were	
+D) had
+ANSWER: C
+
+Question 18.	 
+A) appears	
+B) becomes	
+C) develops	
+D) happens
+ANSWER: D
+
+Question 19.	 
+A) somebody	
+B) everybody	
+C) nobody	
+D) anybody
+ANSWER: B
+
+Question 20.	
+A) produce	
+B) bring	
+C) provide	
+D) make
+ANSWER: C
+
+Question 21.	
+A) discover	
+B) learn	
+C) find		
+D) realise
+ANSWER: B
+
+Question 22.	
+A) that		
+B) what	
+C) whose	
+D) these
+ANSWER: D
+
+Question 23.	
+A) without	
+B) instead	
+C) except	
+D) unless
+ANSWER: A
+
+Question 24.  
+A) hope		
+B) expect	
+C) imagine	
+D) believe
+ANSWER: D
+
+Question 25.  
+A) ordered	
+B) managed	
+C) decided	
+D) aimed
+ANSWER: B
+
+<TITLE>PART 4: READING COMPREHENSION / DIRECTIONS: Read the passage carefully and choose the correct answer.
+
+<TEXT>
+Do you intend to study at American University? It takes a long time to get accepted at most American schools, perhaps as much as a year. That’s why you should start choosing a school as soon as possible. It’s also a good idea to apply to several different institutions so that you’ll have a better chance of acceptance at once. You should start looking for information now, because the more information you have about each college, the better choice you can make. 
+There are two good ways to get the information you need. One is a general reference book, called Guide to American Colleges and Universities. The other good source of information is the catalogue published by each school. 
+You can study the general guide in almost any American library. This book has many useful statistics, such as the number of students, the average test scores for people accepted to the school, the number of books in the library, and the number of faculty members. You can also find the address of each school in this book. 
+Although the general guidebook has helpful information, some of the facts may be out-of-date. For instance, many schools raise their tuition every year. Since you’ll need to know what your education will cost, out-of-date information will not be good enough. Also, schools sometimes change their requirements for entrance. To be sure that you are getting current information, write to the university and ask for its catalogue. The catalogue not only has more detailed information. For instance, the catalogue can tell you if there is a special foreign student advisor, what kind of courses are offered, and what kind of housing is available. Some universities have dormitories, but in others, you have to find your own place to live. 
+With all of this information, you should be able to pick out several good schools. 
+</TEXT>
+
+Question 26. What was the main topic of this talk? 
+A. different kinds of American universities.
+B. sources of information about US universities. 
+C. the difference between colleges and universities. 
+D. how to get accepted at a university. 
+ANSWER: D
+
+Question 27. What can you find in a general guide to universities? 
+A. statistics about the American economy. 
+B. definitions of current slang expressions. 
+C. addresses of the schools. 
+D. current information. 
+ANSWER: C
+
+Question 28. According to the speaker, what is one reason you should write for a catalogue? 
+A. Catalogues give the names of the faculty members. 
+B. There are too many details in the guidebook. 
+C. Information in catalogues is current. 
+D. Addresses are given for the dormitories. 
+ANSWER: C
+
+Question 29. What is tuition? 
+A. textbooks 
+B. students and faculty 
+C. processing of applicants for entrance 
+D. payment for classes 
+ANSWER: D
+
+Question 30. What does the word “housing” mean? 
+A. the building where classes are held. 
+B. cafeterias 
+C. the building where the students live 
+D. transportation facilities 
+ANSWER: C

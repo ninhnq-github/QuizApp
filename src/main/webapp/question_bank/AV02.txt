@@ -1,0 +1,240 @@
+<NAME> THI THỬ TIẾNG ANH - ĐỀ 02
+<TIME> 30
+<QUES> 30
+<OPEN> 01-09-2021 19:15:00
+<CLOSE> 01-09-2021 19:45:00 
+<TRY> 1
+<REVIEW> YES
+<SHOW> YES
+<LOGIN> YES
+
+
+<TITLE>PART 1: ERROR RECOGNITION / DIRECTIONS: Identify the one underlined word or phrase A, B, C, or D that should be corrected or rewritten.
+
+Question 1. The maid does not finish cleaning the rooms at College Dormitory yesterday because she had to help scrub the floors in the kitchen and the cafeteria.
+A. does
+B. cleaning
+C. to help
+D. scrub
+ANSWER: A
+
+Question 2. If one does not have respect for himself, you cannot expect others to respect him.
+A. himself
+B. you
+C. others
+D. him
+ANSWER: B
+
+Question 3. In a special report last year, Dan Rather said that the crime rate is increasing in spite of community and government programs aimed at providing education and employment opportunities for first offenders.
+A. is
+B. in spite of
+C. aimed at
+D. for
+ANSWER: A
+
+Question 4. It is necessary to put a return address that included your name, street number, city, state, and zip code on all correspondence.
+A. to put
+B. a return address
+C. included
+D. all
+ANSWER: C
+
+Question 5. Those of us who belong to the National Association for Foreign Student Affairs should have their memberships renewed in September.
+A. who
+B. should have
+C. their
+D. in September
+ANSWER: C
+
+<TITLE>PART 2: GRAMMAR AND VOCABULARY / DIRECTIONS: Choose the best option to complete each following sentence.
+
+Question 6. Could you hold the ladder ……………… while I climb up and pick the coconuts?
+A. firm
+B. solid
+C. steady
+D. rigid
+ANSWER: C
+
+Question 7. This girl was fast asleep. She has a ……………… sleep.
+A. deeply
+B. sound
+C. quick
+D. soundly
+ANSWER: B
+
+Question 8. She couldn't ……………… her children to his care.
+A. admit
+B. confide
+C. trust
+D. convince
+ANSWER: B
+
+Question 9. Let me ……………… a look at this picture.
+A. had
+B. has
+C. is having
+D. have
+ANSWER: D
+
+Question 10. How about ……………… to Nha Trang?
+A. travel
+B. travelling
+C. to travel
+D. travels
+ANSWER: B
+
+Question 11. He got a ladder from the shed. He ……………… one.
+A. fetched
+B. took
+C. brought
+D. carried
+ANSWER: A
+
+Question 12. Hello! - Oh, I’m awfully sorry. I ……………… you for a close friend of mine.
+A. neglected
+B. mistook
+C. thought
+D. mislaid
+ANSWER: B
+
+Question 13. We ……………… what the weather’s going to be like next Sunday.
+A. think
+B. suppose
+C. wonder
+D. demand
+ANSWER: C
+
+Question 14. My mother is always complaining about ……………… us from school.
+A. to meet
+B. meeting
+C. to collect
+D. collecting
+ANSWER: D
+
+Question 15. Charlie is very ……………… irritated by loud noises.
+A. easily
+B. easy
+C. easement
+D. easiness
+ANSWER: A
+
+<TITLE>PART 3: GAP FILING / DIRECTIONS: Read the following passage and choose the best option for each blank to complete the passage.
+
+<TEXT>
+SWEDEN’S ICE HOTEL
+The village of Jukkasjarvi is in Swedish Lapland, and winter temperatures there can reach - 40° C. But 6,000 holidaymakers (Q16) go there annually, to visit what is probably Europe’s most unusual accommodation. In this hotel, you eat, drink, and sleep in rooms made (Q17) ice. If you want, you can (Q18) get married in one. The bar is ice too, and putting hot drinks on it is obviously not (Q19)! The bedrooms are around -4° C, but fortunately, guests are (Q20) with special sleeping bags that will keep (Q21) warm in the coldest of temperatures. (Q22) outdoor clothes can be supplied too if needed. The hotel is never more than six months old (Q23) it melts in summer, and (Q24) winter it is rebuilt. Creating the hotel (Q25) 10,000 tonnes of ice, plus 30,000 tonnes of snow.
+</TEXT>
+
+Question 16.	 
+A) therefore	
+B) ever		
+C) also			
+D) still
+ANSWER: D
+
+Question 17.	 
+A) by		
+B) of		
+C) within		
+D) for
+ANSWER: B
+
+Question 18.	 
+A) even	
+B) however	
+C) already		
+D) yet
+ANSWER: A
+
+Question 19.	 
+A) supported	
+B) recognised	
+C) recommended	
+D) agreed
+ANSWER: C
+
+Question 20.	 
+A) given	
+B) offered	
+C) provided		
+D) delivered
+ANSWER: C
+
+Question 21.	 
+A) these	
+B) those	
+C) they			
+D) them
+ANSWER: D
+
+Question 22.	 
+A) Suitable	
+B) Convenient	
+C) Acceptable		
+D) Satisfactory
+ANSWER: A
+
+Question 23.	 
+A) although	
+B) because	
+C) so			
+D) while
+ANSWER: B
+
+Question 24.	 
+A) other	
+B) any		
+C) each			
+D) another
+ANSWER: C
+
+Question 25.
+A) brings	
+B) puts		
+C) fetches		
+D) takes
+ANSWER: D
+
+<TITLE>PART 4: READING COMPREHENSION / DIRECTIONS: Read the passage carefully and choose the correct answer.
+
+<TEXT>
+The Young Achiever of the Year
+Kal Kaur Rai has always been interested in fashion and has just won the title of Young Achiever of the Year at the Asian Business Awards. Ever since she was a child, she has drawn clothes and designed patterns. She never told her hard-working parents, who own a supermarket, that she wanted to turn her hobby into a career. She thought they expected her to go into a more established business, so she went to university to do a management degree.
+After university, she moved to London and worked in an advertising agency. She had to attend industry events but couldn’t afford the designer clothes she liked. She started making shirts and tops for herself. When her friends saw her clothes, they asked her to make things for them. She then found a small shop in London willing to take her designs on a sale or return basis. They were very popular and nothing came back. This encouraged her to leave her advertising job, take out a £20,000 loan and begin her own womenswear label.
+Kal’s parents were not angry about her career change and said they would support her, which really pleased her. Her clothes are now on sale in over 70 stores and her business has an income of over £500,000. Her clothes appear in fashion magazines, she designs for pop stars and she has just gained public recognition by winning this award. Her business has come a long way and she knows she is extremely lucky. “What I do is my hobby –and I get paid for it! But remember, I’ve worked hard for this.”
+</TEXT>
+
+Question 26. What is the writer trying to do in the text? 
+A. Encourage fashion designers to make better business plans 
+B. Compare a job in fashion with other choices of career. 
+C. Give details of recent changes in the fashion industry 
+D. Explain how a woman set up a fashion business 
+ANSWER: D
+
+Question 27. What does the reader learn about Kal’s parents? 
+A. They wanted Kal to help them run the family business. 
+B. They did not realize that Kal wanted to work in fashion. 
+C. They insisted Kal should continue with her job in advertising. 
+D. They did not think Kal worked hard enough at university. 
+ANSWER: B
+
+Question 28. Kal decided to borrow £20,000 when 
+A. All her clothes in the London shop were sold. 
+B. Her friends asked her to make clothes for them. 
+C. She lost her job at the advertising agency. 
+D. The fashion industry was in a period of growth. 
+ANSWER: A
+
+Question 29. What does Kal say about her career? 
+A. She plans to open more stores. 
+B. She believes that she deserves her success. 
+C. She particularly enjoys designing for famous people. 
+D. She expects more people to buy her clothes after the award. 
+ANSWER: B
+
+Question 30. What might Kal say now about her career? 
+A. My management degree has helped me more than anything else. It’s so important that young people interested in fashion can deal with money. 
+B. I’ve learnt so much working for other fashion designers. Without this experience, I couldn’t have started my own business. 
+C. Running a fashion business is a dream come true and my parents being happy with my choice makes it even more special. 
+D. Even when I was at university, my friends liked the clothes I made. This encouraged me to think about a career in fashion.
+ANSWER: C

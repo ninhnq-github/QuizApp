@@ -19,7 +19,7 @@
         <class>ninhnq.web.QuizApp.Entity.AssignEntity</class>
         <class>ninhnq.web.QuizApp.Entity.BankEntity</class>
         <class>ninhnq.web.QuizApp.Entity.QuestionEntity</class>
-        <class>ninhnq.web.QuizApp.Entity.QuiztestEntity</class>
+        <class>ninhnq.web.QuizApp.Entity.Quiztest</class>
         <class>ninhnq.web.QuizApp.Entity.ResultEntity</class>
         <class>ninhnq.web.QuizApp.Entity.UserEntity</class>
         <class>Entity.AccountEntity</class>
